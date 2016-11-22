@@ -2,11 +2,12 @@ import React from 'react';
 import profilePic from '../../assets/prof-pic.png';
 import githubIcon from '../../assets/github_circle_gray.png';
 import linkedInIcon from '../../assets/linkedin_circle_gray.png';
+import './ProfileInfo.less';
 
 const ProfileInfo = () => {
 
   return (
-    <div className="col-xs-12 col-sm-6 profile-info">
+    <div className="profile-info col-xs-12 col-sm-6">
       <div className="profile-info-inner">
         <div className="profile-info-inner-cell">
           <div className="profile-pic-container">

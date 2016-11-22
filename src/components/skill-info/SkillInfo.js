@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import SkillTile from '../skill-tile/SkillTile';
+import './SkillInfo.less';
 
 const SkillInfo = ({ whatDescription, languages, frameworks }) => {
 

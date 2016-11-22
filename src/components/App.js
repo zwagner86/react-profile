@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import ProfileInfo from './profile-info/ProfileInfo';
 import SkillInfo from './skill-info/SkillInfo';
 import * as logos from '../assets/logos/logos';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
 import './App.css';
 
 class App extends Component {
@@ -28,7 +26,7 @@ class App extends Component {
       },
       {
         name: "CSS",
-        logoPath: logos.html5Logo,
+        logoPath: logos.cssLogo,
         star: true
       },
       {
@@ -117,7 +115,6 @@ class App extends Component {
   };
 
   render() {
-    console.log(logos);
     return (
       <div className="App container profile">
         <ProfileInfo />
