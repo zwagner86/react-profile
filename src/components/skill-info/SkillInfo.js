@@ -11,7 +11,7 @@ const SkillInfo = ({ whatDescription, languages, frameworks }) => {
           <div className="info-header">WHO?</div>
           <div className="info">
             <div className="description">
-              Hey, what's up?  My full name is <span className="highlighted">Zachary</span> but you can call me <span className="highlighted">Zach</span>.  I am a <span className="highlighted">Senior Software Engineer</span> with <span className="highlighted">full-stack experience</span>, but a passion for working in the <span className="highlighted">front-end</span>.  For example, I made this page so I could play around with <span className="highlighted">Angular2</span> and <span className="highlighted">TypeScript</span>!
+              Hey, what's up?  My full name is <span className="highlighted">Zachary</span> but you can call me <span className="highlighted">Zach</span>.  I am a <span className="highlighted">Senior Software Engineer</span> with <span className="highlighted">full-stack experience</span>, but a passion for working in the <span className="highlighted">front-end</span>.  For example, I made this page so I could play around with <span className="highlighted">React</span>!
             </div>
           </div>
         </div>
