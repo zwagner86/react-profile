@@ -62,7 +62,7 @@
     "deploy": "gh-pages -d build",
     "test": "node scripts/test.js --env=jsdom"
   },
-  "homepage": "http://react.zacharywagner.net",
+  "homepage": "http://www.zacharywagner.net",
   "jest": {
     "moduleFileExtensions": [
       "jsx",
