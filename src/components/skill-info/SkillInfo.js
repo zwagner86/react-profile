@@ -13,6 +13,9 @@ const SkillInfo = ({ whatDescription, languages, frameworks }) => {
             <div className="description">
               Hey, what's up?  My full name is <span className="highlighted">Zachary</span> but you can call me <span className="highlighted">Zach</span>.  I am a <span className="highlighted">Senior Software Engineer</span> with <span className="highlighted">full-stack experience</span>, but a passion for working in the <span className="highlighted">front-end</span>.  For example, I made this page so I could play around with <span className="highlighted">React</span>!
             </div>
+            <div className="other-version-text">
+              I also have a version of this page that uses <span className="highlighted">Angular 2</span> and <span className="highlighted">TypeScript</span>.  Check that out <a href="http://ng2.zacharywagner.net" target="_blank">here</a>.
+            </div>
           </div>
         </div>
         <div className="info-container">
@@ -36,7 +39,7 @@ const SkillInfo = ({ whatDescription, languages, frameworks }) => {
         <div className="info-container">
           <div className="info-header">WHERE?</div>
           <div className="info">
-            <div><a href="https://www.slalom.com/locations/chicago" target="_blank">Slalom Consulting</a></div>
+            <div className="employer-link"><a href="https://www.slalom.com/locations/chicago" target="_blank">Slalom Consulting</a></div>
             <div>December 2012 - Present</div>
             <div>Chicago, IL</div>
             <div>Senior Software Engineer</div>
