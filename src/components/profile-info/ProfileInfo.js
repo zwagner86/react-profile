@@ -12,8 +12,8 @@ const ProfileInfo = () => (
                     <img src={ profilePic } alt="Zachary Wagner Profile" />
                 </div>
                 <h1>Hey, I&apos;m Zach,</h1>
-                <h4>a Senior Software Engineer</h4>
-                <h4>working in Chicago for Slalom Consulting</h4>
+                <h4>a Front End Engineer</h4>
+                <h4>working in Chicago for SpotHero</h4>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/in/zacharywagner" target="_blank" rel="noopener noreferrer">
                         <img className="linkedin" src={ linkedInIcon } alt="LinkedIn Icon" />

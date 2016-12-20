@@ -14,7 +14,7 @@ const SkillInfo = ( { whatDescription, languages, frameworks } ) => (
                         <span>but you can call me </span>
                         <span className="highlighted">Zach</span>
                         <span>. I am a </span>
-                        <span className="highlighted">Senior Software Engineer </span>
+                        <span className="highlighted">Software Engineer </span>
                         <span>with </span>
                         <span className="highlighted">full-stack experience</span>
                         <span>, but a passion for working in the </span>
@@ -61,6 +61,20 @@ const SkillInfo = ( { whatDescription, languages, frameworks } ) => (
                 <div className="info">
                     <div className="employer-link">
                         <a
+                          href="https://www.spothero.com"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                            SpotHero
+                        </a>
+                    </div>
+                    <div>December 2016 - Present</div>
+                    <div>Chicago, IL</div>
+                    <div>Front End Engineer</div>
+                </div>
+                <div className="info">
+                    <div className="employer-link">
+                        <a
                           href="https://www.slalom.com/locations/chicago"
                           target="_blank"
                           rel="noopener noreferrer"
@@ -68,7 +82,7 @@ const SkillInfo = ( { whatDescription, languages, frameworks } ) => (
                             Slalom Consulting
                         </a>
                     </div>
-                    <div>December 2012 - Present</div>
+                    <div>December 2012 - December 2016</div>
                     <div>Chicago, IL</div>
                     <div>Senior Software Engineer</div>
                 </div>
