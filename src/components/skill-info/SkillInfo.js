@@ -22,14 +22,6 @@ const SkillInfo = ( { whatDescription, languages, frameworks } ) => (
                         <span>. For example, I made this page so I could play around with </span>
                         <span className="highlighted">React</span>!
                     </div>
-                    <div className="other-version-text">
-                        <span>I also have a version of this page that uses </span>
-                        <span className="highlighted">Angular 2 </span>
-                        <span>and </span>
-                        <span className="highlighted">TypeScript</span>
-                        <span>. Check that out </span>
-                        <a href="http://ng2.zacharywagner.net" target="_blank" rel="noopener noreferrer">here</a>.
-                    </div>
                 </div>
             </div>
             <div className="info-container">
