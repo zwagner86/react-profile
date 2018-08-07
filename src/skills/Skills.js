@@ -1,6 +1,6 @@
-import React, { PropTypes } from "react";
+import React from "react";
 import SkillTile from "../skill-tile/SkillTile";
-import "./SkillInfo.less";
+// import "./SkillInfo.less";
 
 const SkillInfo = ( { whatDescription, languages, frameworks } ) => (
     <div className="col-xs-12 col-sm-6 skill-info">
@@ -82,19 +82,5 @@ const SkillInfo = ( { whatDescription, languages, frameworks } ) => (
         </div>
     </div>
 );
-
-SkillInfo.propTypes = {
-    whatDescription: PropTypes.string.isRequired,
-    languages: PropTypes.arrayOf( PropTypes.shape( {
-        star: PropTypes.bool,
-        name: PropTypes.string,
-        logoPath: PropTypes.string,
-    } ) ).isRequired,
-    frameworks: PropTypes.arrayOf( PropTypes.shape( {
-        star: PropTypes.bool,
-        name: PropTypes.string,
-        logoPath: PropTypes.string,
-    } ) ).isRequired,
-};
 
 export default SkillInfo;

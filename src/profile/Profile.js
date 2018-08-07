@@ -2,7 +2,7 @@ import React from "react";
 import profilePic from "../../assets/prof-pic.png";
 import githubIcon from "../../assets/github_circle_gray.png";
 import linkedInIcon from "../../assets/linkedin_circle_gray.png";
-import "./ProfileInfo.less";
+// import "./ProfileInfo.less";
 
 const ProfileInfo = () => (
     <div className="profile-info col-xs-12 col-sm-6">
@@ -13,7 +13,8 @@ const ProfileInfo = () => (
                 </div>
                 <h1>Hey, I&apos;m Zach,</h1>
                 <h4>a Front End Engineer</h4>
-                <h4>working in Chicago for SpotHero</h4>
+                <h4>working in Chicago</h4>
+                <h4>for SpotHero</h4>
                 <div className="social-icons">
                     <a href="https://www.linkedin.com/in/zacharywagner" target="_blank" rel="noopener noreferrer">
                         <img className="linkedin" src={ linkedInIcon } alt="LinkedIn Icon" />
@@ -36,7 +37,5 @@ const ProfileInfo = () => (
         </div>
     </div>
 );
-
-ProfileInfo.propTypes = {};
 
 export default ProfileInfo;
