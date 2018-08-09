@@ -19,7 +19,7 @@ import springLogo from "./spring.png";
 import typescriptLogo from "./typescript.png";
 import webpackLogo from "./webpack.png";
 
-module.exports = {
+export {
     angularLogo,
     bootstrapLogo,
     cplusplusLogo,
@@ -39,5 +39,5 @@ module.exports = {
     sassLogo,
     springLogo,
     typescriptLogo,
-    webpackLogo,
+    webpackLogo
 };

@@ -1,82 +1,86 @@
-@screen-sm-min: 768px;
-@screen-md-min: 992px;
-@screen-lg-min: 1200px;
+.Profile {
+    width: 100%;
+    background-color: #35a7ff;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-.profile-info {
-  background-color: #35a7ff;
-  color: #ffffff;
-
-  @media (min-width: @screen-sm-min) {
-    position: fixed !important;
-    height: 100%;
-    left: 0;
-    overflow: hidden;
-  }
-
-  .profile-info-inner {
+.Profile-inner {
     padding: 30px 0;
     text-align: center;
     display: table;
     width: 100%;
     height: 100%;
+}
 
-    .profile-info-inner-cell {
-      display: table-cell;
-      vertical-align: middle;
+.Profile-inner-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
 
-      .profile-pic-container {
-        padding-bottom: 25px;
+.Profile-pic-container {
+    padding-bottom: 25px;
+}
 
-        img {
-          width: 200px;
-          border: 5px solid #ffffff;
-          border-radius: 50%;
-        }
-      }
+.Profile-pic-img {
+    width: 200px;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+}
 
-      h4 {
-        margin: 0;
-      }
+.Profile-h4 {
+    margin: 0;
+}
 
-      .social-icons {
-        display: inline-block;
-        padding-top: 15px;
+.Profile-social-icons {
+    display: inline-block;
+    padding-top: 15px;
+}
 
-        a {
-          img {
-            width: 40px;
-            margin: 10px 5px;
-            &.linkedin {
-              margin-left: 0;
-            }
-            &.github {
-              margin-right: 0;
-            }
-          }
-        }
-      }
+.Profile-social-img {
+    width: 40px;
+    margin: 10px 5px;
+}
 
-      .resume-link {
-        display: none;
+.Profile-linkedin-img {
+    margin-left: 0;
+}
 
-        @media (min-width: 1000px) {
-          display: block;
-          padding-top: 15px;
+.Profile-github-img {
+    margin-right: 0;
+}
 
-          .resume-btn {
-            width: 175px;
-            background-color: #ffffff;
-            border-color: #35a7ff;
-            border-radius: 0;
-            color: #35a7ff;
+.Profile-resume-link {
+    display: none;
+}
 
-            &:hover, &:focus {
-              background-color: #d8d9d9;
-            }
-          }
-        }
-      }
-
+@media (min-width: 768px) {
+    .Profile {
+        width: 50%;
+        position: fixed !important;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
     }
-  }
+}
+
+@media (min-width: 1000px) {
+    .Profile-resume-link {
+        display: block;
+        padding-top: 15px;
+    }
+
+    .Profile-resume-btn {
+        width: 175px;
+        background-color: #ffffff;
+        border-color: #35a7ff;
+        border-radius: 0;
+        color: #35a7ff;
+    }
+
+    .Profile-resume-btn:hover,
+    .Profile-resume-btn:focus {
+        background-color: #d8d9d9;
+    }
 }

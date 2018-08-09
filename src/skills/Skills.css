@@ -1,72 +1,71 @@
-@screen-sm-min: 768px;
-@screen-md-min: 992px;
-@screen-lg-min: 1200px;
+.Skills {
+    color: #46494C;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
-.skill-info {
-  color: #46494C;
-
-  @media (min-width: @screen-sm-min) {
-    height: auto;
-    position: absolute !important;
-    right: 0;
-  }
-
-  .skill-info-inner {
-    padding: 30px 0;
-
-    .info-container {
-      padding-bottom: 60px;
-      padding-left: 15px;
-      padding-right: 15px;
-
-      .info-header {
-        color: #35a7ff;
-        font-style: italic;
-        font-weight: 600;
-        font-size: 20px;
-      }
-
-      .info {
-        padding-bottom: 15px;
-        
-        .description {
-          text-indent: 20px;
-        }
-
-        .highlighted {
-          color: #35a7ff;
-        }
-
-        .employer-link,
-        .other-version-text {
-          a {
-            color: #35a7ff;
-
-            &:hover, &:active, &:focus {
-              color: #1499ff;
-            }
-          }
-        }
-
-        .other-version-text {
-          text-indent: 20px;
-          padding-top: 30px;
-        }
-
-        .sub-info-container {
-          padding-top: 30px;
-
-          .sub-info-desc {
-            color: #35a7ff;
-            font-size: 16px;
-            padding-bottom: 20px;
-          }
-
-          .skills-list {
-            text-align: center;
-          }
-        }
-      }
+@media (min-width: 768px) {
+    .Skills {
+        width: 50%;
+        height: auto;
+        position: absolute !important;
+        right: 0;
     }
-  }
+}
+
+.Skills-inner {
+    padding: 30px 0;
+}
+
+.Skills-section {
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.Skills-section-header {
+    color: #35a7ff;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.Skills-section-info {
+    padding-bottom: 15px;
+}
+
+.Skills-section-description {
+    text-indent: 20px;
+}
+
+.Skills-section-highlight {
+    color: #35a7ff;
+}
+
+.Skills-section-employer-link {
+    color: #35a7ff;
+}
+
+.Skills-section-employer-link:hover,
+.Skills-section-employer-link:active,
+.Skills-section-employer-link:focus {
+    color: #1499ff;
+}
+
+.Skills-languages,
+.Skills-frameworks {
+    padding-top: 30px;
+}
+
+.Skills-languages-description,
+.Skills-frameworks-description {
+    color: #35a7ff;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.Skills-languages-list,
+.Skills-frameworks-list {
+    text-align: center;
 }
