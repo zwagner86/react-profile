@@ -49,7 +49,7 @@ const ProfileInfo = () => (
                         href="http://resume.zacharywagner.net"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="btn btn-primary Profile-resume-btn"
+                        className="Profile-resume-btn"
                     >
                         View Resume
                     </a>
