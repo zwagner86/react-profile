@@ -18,8 +18,8 @@
 }
 
 .SkillTile-image-block {
-    height: 100px;
-    width: 100px;
+    height: 99px;
+    width: 99px;
     display: table;
     text-align: center;
     border: 1px solid #46494C;
@@ -36,7 +36,7 @@
     max-width: 99px;
     max-height: 99px;
     padding: 10px;
-    vertical-align: text-bottom;
+    vertical-align: middle;
 }
 
 .SkillTile-star-icon {
