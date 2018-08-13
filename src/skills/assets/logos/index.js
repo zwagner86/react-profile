@@ -1,5 +1,5 @@
-import angularLogo from "./angular.svg";
-import bootstrapLogo from "./bootstrap.svg";
+import angularLogo from "./angular.png";
+import bootstrapLogo from "./bootstrap.png";
 import cplusplusLogo from "./cplusplus.png";
 import cssLogo from "./css.png";
 import expressLogo from "./express.png";
@@ -17,7 +17,7 @@ import pugLogo from "./pug.png";
 import pythonLogo from "./python.png";
 import reactLogo from "./react.png";
 import reduxLogo from "./redux.png";
-import sassLogo from "./sass.svg";
+import sassLogo from "./sass.png";
 import springLogo from "./spring.png";
 import typescriptLogo from "./typescript.png";
 import webpackLogo from "./webpack.png";
