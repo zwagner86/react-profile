@@ -25,6 +25,8 @@
 
 .Profile-pic-img {
     width: 200px;
+    height: 200px;
+    background-color: #ffffff;
     border: 5px solid #ffffff;
     border-radius: 50%;
 }
