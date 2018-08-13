@@ -50,6 +50,16 @@ const skillData = {
             star: false
         },
         {
+            name: "jQuery",
+            logoPath: logos.jqueryLogo,
+            star: true
+        },
+        {
+            name: "Redux",
+            logoPath: logos.reduxLogo,
+            star: true
+        },
+        {
             name: "Bootstrap",
             logoPath: logos.bootstrapLogo,
             star: true
@@ -60,11 +70,6 @@ const skillData = {
             star: true
         },
         {
-            name: "jQuery",
-            logoPath: logos.jqueryLogo,
-            star: true
-        },
-        {
             name: "Sass",
             logoPath: logos.sassLogo,
             star: true
@@ -72,6 +77,11 @@ const skillData = {
         {
             name: "Grunt",
             logoPath: logos.gruntLogo,
+            star: false
+        },
+        {
+            name: "Gulp",
+            logoPath: logos.gulpLogo,
             star: true
         },
         {
@@ -92,6 +102,11 @@ const skillData = {
         {
             name: "TypeScript",
             logoPath: logos.typescriptLogo,
+            star: false
+        },
+        {
+            name: "Pug",
+            logoPath: logos.pugLogo,
             star: false
         },
         {
