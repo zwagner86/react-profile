@@ -1,0 +1,97 @@
+.ProfileInfo {
+    width: 100%;
+    background-color: #35a7ff;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.ProfileInfo-inner {
+    padding: 30px 0;
+    text-align: center;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.ProfileInfo-inner-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ProfileInfo-pic-container {
+    padding-bottom: 25px;
+}
+
+.ProfileInfo-pic-img {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border: 5px solid #ffffff;
+    border-radius: 50%;
+}
+
+.ProfileInfo-h4 {
+    margin: 0;
+}
+
+.ProfileInfo-social-icons {
+    display: inline-block;
+    padding-top: 15px;
+}
+
+.ProfileInfo-social-img {
+    width: 40px;
+    margin: 10px 5px;
+}
+
+.ProfileInfo-linkedin-img {
+    margin-left: 0;
+}
+
+.ProfileInfo-github-img {
+    margin-right: 0;
+}
+
+.ProfileInfo-resume-link {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .ProfileInfo {
+        width: 50%;
+        position: fixed !important;
+        height: 100%;
+        left: 0;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1000px) {
+    .ProfileInfo-resume-link {
+        display: block;
+        padding-top: 15px;
+    }
+
+    .ProfileInfo-resume-btn {
+        display: inline-block;
+        width: 175px;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.3;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        background-color: #ffffff;
+        border-color: #35a7ff;
+        border-radius: 0;
+        color: #35a7ff;
+    }
+
+    .ProfileInfo-resume-btn:hover,
+    .ProfileInfo-resume-btn:focus {
+        background-color: #d8d9d9;
+    }
+}
