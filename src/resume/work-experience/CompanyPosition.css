@@ -1,0 +1,18 @@
+.CompanyPosition {
+    font-size: 12px;
+    display: inline-block;
+}
+
+.CompanyPosition-name {
+    display: inline;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.CompanyPosition-divider {
+    display: inline;
+}
+
+.CompanyPosition-date {
+    display: inline;
+}

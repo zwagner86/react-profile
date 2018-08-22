@@ -1,8 +1,8 @@
-import React from "react";
-import profilePic from "./assets/prof-pic.png";
-import githubIcon from "./assets/github_circle_gray.png";
-import linkedInIcon from "./assets/linkedin_circle_gray.png";
-import "./ProfileInfo.css";
+import React from 'react';
+import profilePic from './assets/prof-pic.png';
+import githubIcon from './assets/github_circle_gray.png';
+import linkedInIcon from './assets/linkedin_circle_gray.png';
+import './ProfileInfo.css';
 
 const ProfileInfo = () => (
     <div className="ProfileInfo">

@@ -14,6 +14,22 @@ const createInterestStringFromArray = array => {
     return interestString.slice(0, interestString.length - 5);
 }
 
+const slalomInfo = {
+    name: 'Slalom Consulting',
+    location: 'Chicago, IL'
+};
+
+const slalomPositions = [
+    {
+        role: 'Senior Software Engineer',
+        dates: '09/2016 - Present'
+    },
+    {
+        role: 'Software Engineer',
+        dates: '12/2012 - 09/2016'
+    }
+]
+
 const slalomProjects = [
     {
         role: 'Front-End JavaScript Developer',
@@ -230,6 +246,8 @@ const skills = [
 const resumeData = {
     createTechStringFromArray,
     createInterestStringFromArray,
+    slalomInfo,
+    slalomPositions,
     slalomProjects,
     education,
     interests,

@@ -1,7 +1,7 @@
-import React from "react";
-import SkillTile from "./SkillTile";
+import React from 'react';
 import skillData from './skill-data';
-import "./Skills.css";
+import SkillTile from './SkillTile';
+import './Skills.css';
 
 const Skills = () => (
     <div className="Skills">

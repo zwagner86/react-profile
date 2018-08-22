@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import PropTypes from 'prop-types';
-import "./SkillTile.css";
+import './SkillTile.css';
 
 const SkillTile = ({
     tileData: {

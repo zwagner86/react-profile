@@ -1,127 +1,29 @@
-/* .resume-container {
+.Resume-container {
     width: 1000px;
     padding: 40px 0 60px 0;
     color: #46494C !important;
     -webkit-print-color-adjust: exact;
-  
-    .resume-header {
-      display: inline-block;
-      width: 100%;
-      height: 135px;
-      border-bottom: 2px solid #46494C !important;
-      padding: 0 20px 23px;
-  
-      .personal-info {
-        display: inline-block;
-        text-align: left;
-        float: left;
-        width: 65%;
-  
-        h2 {
-          margin-top: 0;
-        }
-  
-        .summary {
-          font-size: 12px;
-        }
-      }
-  
-      .contact-info {
-        display: inline-block;
-        text-align: right;
-        float: right;
-        width: 35%;
-        height: 100%;
-        font-size: 12px;
-  
-        .contact-item-table {
-          display: table;
-          width: 100%;
-          height: 25%;
-  
-          .contact-item-cell {
-            display: table-cell;
-            vertical-align: middle;
-  
-            i.glyphicon {
-              padding-left: 3px;
-              font-size: 14px;
-              top: 3px;
-              color: #35a7ff !important;
-  
-              &:before {
-                color: #35a7ff !important;
-              }
-            }
-          }
-        }
-      }
-    }
-  
-    .resume-body {
-      display: table;
-      width: 100%;
-      padding: 20px;
-  
-      .section-header {
-        font-weight: 600;
-        font-size: 20px;
-        padding-bottom: 20px;
-      }
-  
-      .left-column {
-        display: table-cell;
-        width: 50%;
-        padding-right: 15px;
-  
-        .work-experience {
-  
-          .work-experience-company {
-            display: inline-block;
-            //padding-bottom: 15px;
-  
-            .company-position {
-              display: inline-block;
-              padding: 0;
-  
-              .position {
-                font-size: 12px;
-                display: inline-block;
-  
-                .position-name {
-                  display: inline;
-                  font-weight: 600;
-                  font-size: 14px;
-                }
-  
-                .position-divider {
-                  display: inline;
-  
-                }
-  
-                .position-date {
-                  display: inline;
-  
-                }
-              }
-            }
-  
-            .company-location {
-              display: inline-block;
-              float: right;
-              padding: 0;
-              font-size: 12px;
-              text-align: right;
-            }
-  
-            .company-name {
-              padding: 0;
-              font-size: 16px;
-              color: #35a7ff !important;
-            }
-          }
-  
-          .work-accomplishments {
+}
+
+.Resume-body {
+    display: table;
+    width: 100%;
+    padding: 20px;
+}
+
+.Resume-section-header {
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.Resume-left-column {
+    display: table-cell;
+    width: 50%;
+    padding-right: 15px;
+}
+
+/*          .work-accomplishments {
             padding-top: 15px;
   
             .work-accomplishments-header {

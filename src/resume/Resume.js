@@ -1,5 +1,8 @@
 import React from 'react';
 import resumeData from './resume-data';
+import ResumeHeader from './ResumeHeader';
+import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
+import './Resume.css';
 
 const Resume = () => {
     const {
@@ -7,57 +10,29 @@ const Resume = () => {
         createTechStringFromArray,
         education,
         interests,
+        slalomInfo,
+        slalomPositions,
         slalomProjects,
         skills
     } = resumeData;
 
     return (
         <div className="Resume">
-            <div className="resume-header">
-                <div className="personal-info">
-                    <h2>Zachary Wagner</h2>
-                    <div className="summary">
-                        Software engineer with experience developing web applications using various technologies and platforms.  Proficient across all areas of software architecture.  Strong background in front-end development using multiple frameworks and libraries and experience with automated testing.
-                    </div>
-                </div>
-                <div className="contact-info">
-                    <div className="contact-item-table">
-                        <div className="contact-item-cell">wagnerzachary@yahoo.com <i className="glyphicon glyphicon-envelope"></i></div>
-                    </div>
-                    <div className="contact-item-table">
-                        <div className="contact-item-cell">708-203-5356 <i className="glyphicon glyphicon-earphone"></i></div>
-                    </div>
-                    <div className="contact-item-table">
-                        <div className="contact-item-cell">Chicago, IL <i className="glyphicon glyphicon-map-marker"></i></div>
-                    </div>
-                    <div className="contact-item-table">
-                        <div className="contact-item-cell">www.zacharywagner.net <i className="glyphicon glyphicon-globe"></i></div>
-                    </div>
-                </div>
-            </div>
-            <div className="resume-body">
-                <div className="left-column">
-                    <div className="section work-experience">
-                        <div className="section-header">Work Experience</div>
-                        <div className="work-experience-company">
-                            <div className="company-position col-xs-8">
-                                <div className="position">
-                                    <div className="position-name">Senior Software Engineer</div>
-                                    <div className="position-divider">--</div>
-                                    <div className="position-date">09/2016 - Present</div>
-                                </div>
-                                <div className="position">
-                                    <div className="position-name">Software Engineer</div>
-                                    <div className="position-divider">--</div>
-                                    <div className="position-date">12/2012 - 09/2016</div>
-                                </div>
-                            </div>
-                            <div className="company-location col-xs-4">Chicago, IL</div>
-                            <div className="company-name col-xs-12">Slalom Consulting</div>
-                        </div>
+            <ResumeHeader />
+            <div className="Resume-body">
+                <div className="Resume-left-column">
+                    <div className="Resume-section Resume-experience">
+                        <div className="Resume-section-header">Work Experience</div>
+                        <CompanyWorkExperience
+                            info={slalomInfo}
+                            positions={slalomPositions}
+                        />
                         {slalomProjects.map((project, i) => {
                             return (
-                                <div className="work-accomplishments">
+                                <div
+                                    key={i}
+                                    className="work-accomplishments"
+                                >
                                     <div className="work-accomplishments-header">{project.role} – {project.client} – {project.duration}</div>
                                     <div className="work-accomplishments-summary">{project.summary}</div>
                                     <div className="work-accomplishments-tech">
@@ -85,7 +60,10 @@ const Resume = () => {
                             <div className="skills-graph">
                                 {skills.map((skill, i) => {
                                     return (
-                                        <div className="skill-table">
+                                        <div
+                                            key={i}
+                                            className="skill-table"
+                                        >
                                             <div className="skill-text-column">
                                                 {skill.name}
                                             </div>
