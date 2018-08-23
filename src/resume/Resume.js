@@ -2,6 +2,7 @@ import React from 'react';
 import resumeData from './resume-data';
 import ResumeHeader from './ResumeHeader';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
+import Project from './projects/Project';
 import './Resume.css';
 
 const Resume = () => {
@@ -29,17 +30,10 @@ const Resume = () => {
                         />
                         {slalomProjects.map((project, i) => {
                             return (
-                                <div
+                                <Project
                                     key={i}
-                                    className="work-accomplishments"
-                                >
-                                    <div className="work-accomplishments-header">{project.role} – {project.client} – {project.duration}</div>
-                                    <div className="work-accomplishments-summary">{project.summary}</div>
-                                    <div className="work-accomplishments-tech">
-                                        <div className="tech-label">Technologies Used:</div>
-                                        <div className="tech-list">{createTechStringFromArray(project.tech)}</div>
-                                    </div>
-                                </div>
+                                    project={project}
+                                />
                             );
                         })}
                     </div>
