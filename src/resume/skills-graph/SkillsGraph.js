@@ -38,10 +38,12 @@ const SkillsGraph = ({
 };
 
 SkillsGraph.propTypes = {
-    skills: PropTypes.shape({
-        name: PropTypes.string.isRequired,
-        rating: PropTypes.number.isRequired
-    }).isRequired
+    skills: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired,
+            rating: PropTypes.number.isRequired
+        })
+    ).isRequired
 };
 
 export default SkillsGraph;
