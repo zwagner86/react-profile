@@ -1,4 +1,5 @@
 import React from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './ResumeHeader.css';
 
 const ResumeHeader = () => {
@@ -12,16 +13,48 @@ const ResumeHeader = () => {
             </div>
             <div className="ResumeHeader-contact-info">
                 <div className="ResumeHeader-contact-item-table">
-                    <div className="ResumeHeader-contact-item-cell">wagnerzachary@yahoo.com <i className="ResumeHeader-contact-info-icon glyphicon glyphicon-envelope"></i></div>
+                    <div className="ResumeHeader-contact-item-cell">
+                        wagnerzachary@yahoo.com&nbsp;
+                        <FontAwesomeIcon
+                            className="ResumeHeader-contact-info-icon"
+                            icon="envelope"
+                            size="lg"
+                            fixedWidth
+                        />
+                    </div>
                 </div>
                 <div className="ResumeHeader-contact-item-table">
-                    <div className="Resume-contact-item-cell">708-203-5356 <i className="ResumeHeader-contact-info-icon glyphicon glyphicon-earphone"></i></div>
+                    <div className="Resume-contact-item-cell">
+                        708-203-5356&nbsp;
+                        <FontAwesomeIcon
+                            className="ResumeHeader-contact-info-icon"
+                            icon="phone"
+                            size="lg"
+                            fixedWidth
+                        />
+                    </div>
                 </div>
                 <div className="ResumeHeader-contact-item-table">
-                    <div className="ResumeHeader-contact-item-cell">Chicago, IL <i className="ResumeHeader-contact-info-icon glyphicon glyphicon-map-marker"></i></div>
+                    <div className="ResumeHeader-contact-item-cell">
+                        Chicago, IL&nbsp;
+                        <FontAwesomeIcon
+                            className="ResumeHeader-contact-info-icon"
+                            icon="map-marker-alt"
+                            size="lg"
+                            fixedWidth
+                        />
+                    </div>
                 </div>
                 <div className="ResumeHeader-contact-item-table">
-                    <div className="ResumeHeader-contact-item-cell">www.zacharywagner.net <i className="ResumeHeader-contact-info-icon glyphicon glyphicon-globe"></i></div>
+                    <div className="ResumeHeader-contact-item-cell">
+                        www.zacharywagner.net&nbsp;
+                        <FontAwesomeIcon
+                            className="ResumeHeader-contact-info-icon"
+                            icon="globe-americas"
+                            size="lg"
+                            fixedWidth
+                        />
+                    </div>
                 </div>
             </div>
         </div>

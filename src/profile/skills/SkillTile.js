@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './SkillTile.css';
 
 const SkillTile = ({
@@ -15,9 +16,10 @@ const SkillTile = ({
                 <div className="SkillTile-text">
                     {name}&nbsp;
                     {star &&
-                        <svg className="SkillTile-star-icon" role="presentation" viewBox="0 0 260 245" width="52" height="49">
-                            <path d="m55,237 74-228 74,228L9,96h240"/>
-                        </svg>
+                        <FontAwesomeIcon
+                            className="SkillTile-icon-star"
+                            icon="star"
+                        />
                     }
                 </div>
             </div>

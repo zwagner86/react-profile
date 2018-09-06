@@ -1,0 +1,36 @@
+.SkillBar {
+    display: table;
+    width: 100%;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.SkillBar:last-child {
+    padding-bottom: 0
+}
+
+.SkillBar-name {
+    display: table-cell;
+    vertical-align: top;
+    text-align: right;
+    width: 185px;
+    height: 100%;
+    padding-right: 15px;
+}
+
+.SkillBar-graph {
+    display: table-cell;
+    vertical-align: top;
+    width: 280px;
+}
+
+.SkillBar-graph-bar {
+    width: 100%;
+    height: 20px;
+    border: 1px solid #46494C;
+}
+
+.SkillBar-graph-fill {
+    height: 18px;
+    background: #35a7ff;
+}

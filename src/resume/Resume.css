@@ -1,6 +1,8 @@
-.Resume-container {
+.Resume {
     width: 1000px;
     padding: 40px 0 60px 0;
+    margin-left: auto;
+    margin-right: auto;
     color: #46494C !important;
     -webkit-print-color-adjust: exact;
 }

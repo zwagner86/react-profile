@@ -40,12 +40,6 @@
 }
 
 .ResumeHeader-contact-info-icon {
-    padding-left: 3px;
-    font-size: 14px;
-    top: 3px;
-    color: #35a7ff !important;
-}
-
-.ResumeHeader-contact-info-icon::before {
-    color: #35a7ff !important;
+    margin-left: 3px;
+    color: #35a7ff;
 }

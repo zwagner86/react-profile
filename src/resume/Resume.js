@@ -3,12 +3,12 @@ import resumeData from './resume-data';
 import ResumeHeader from './ResumeHeader';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
 import Project from './projects/Project';
+import SkillsGraph from './skills-graph/SkillsGraph';
 import './Resume.css';
 
 const Resume = () => {
     const {
         createInterestStringFromArray,
-        createTechStringFromArray,
         education,
         interests,
         slalomInfo,
@@ -38,42 +38,10 @@ const Resume = () => {
                         })}
                     </div>
                 </div>
-                <div className="right-column">
-                    <div className="section skills padded-bottom">
-                        <div className="section-header">Skills & Competencies</div>
-                        <div className="skills-graph-container">
-                            <div className="skills-graph-guide">
-                                <div className="empty-guide-column" />
-                                <div className="guide-bar">
-                                    <div className="guide-bar-quarter" />
-                                    <div className="guide-bar-quarter" />
-                                    <div className="guide-bar-quarter" />
-                                    <div className="guide-bar-quarter" />
-                                </div>
-                            </div>
-                            <div className="skills-graph">
-                                {skills.map((skill, i) => {
-                                    return (
-                                        <div
-                                            key={i}
-                                            className="skill-table"
-                                        >
-                                            <div className="skill-text-column">
-                                                {skill.name}
-                                            </div>
-                                            <div className="graph-column">
-                                                <div className="graph-bar">
-                                                    <div
-                                                        className="graph-fill"
-                                                        style={{height: `${skill.rating}%`}}
-                                                    />
-                                                </div>
-                                            </div>
-                                        </div>
-                                    );
-                                })}
-                            </div>
-                        </div>
+                <div className="Resume-right-column">
+                    <div className="Resume-section Resume-skills">
+                        <div className="Resume-section-header">Skills & Competencies</div>
+                        <SkillsGraph skills={skills} />
                     </div>
                     <div className="section interests padded-bottom">
                         <div className="section-header">Interests</div>

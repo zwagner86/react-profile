@@ -36,8 +36,8 @@ const Project = ({
 Project.propTypes = {
     project: PropTypes.shape({
         role: PropTypes.string.isRequired,
-        client: PropTypes.string.isRequired
-        duration: PropTypes.string.isRequired
+        client: PropTypes.string.isRequired,
+        duration: PropTypes.string.isRequired,
         summary: PropTypes.string.isRequired,
         tech: PropTypes.arrayOf(PropTypes.string).isRequired
     }).isRequired

@@ -39,13 +39,11 @@
     vertical-align: middle;
 }
 
-.SkillTile-star-icon {
+.SkillTile-icon-star {
     display: inline-block;
     position: relative;
     vertical-align: middle;
-    width: 18px;
-    height: 18px;
     padding-left: 3px;
     margin-top: -4px;
-    fill: #ffdc00;
+    color: #ffdc00;
 }
