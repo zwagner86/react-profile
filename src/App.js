@@ -7,7 +7,6 @@ import {
 } from 'react-router-dom';
 import Profile from './profile/Profile';
 import Resume from './resume/Resume';
-import './App.css';
 
 const redirectToHome = () => {
     return <Redirect to="/" />;

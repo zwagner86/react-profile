@@ -12,7 +12,7 @@ const CompanyWorkExperience = ({
 }) => {
     return (
         <div className="CompanyWorkExperience">
-            <div className="CompanyWorkExperience-positions col-xs-8">
+            <div className="CompanyWorkExperience-positions">
                 {positions.map((position, i) => {
                     return (
                         <CompanyPosition
@@ -22,8 +22,8 @@ const CompanyWorkExperience = ({
                     );
                 })}
             </div>
-            <div className="CompanyWorkExperience-location col-xs-4">{location}</div>
-            <div className="CompanyWorkExperience-name col-xs-12">{name}</div>
+            <div className="CompanyWorkExperience-location">{location}</div>
+            <div className="CompanyWorkExperience-name">{name}</div>
         </div>
     );
 };

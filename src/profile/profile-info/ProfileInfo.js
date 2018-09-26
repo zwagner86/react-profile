@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
+import {Helmet} from "react-helmet";
 import profilePic from './assets/prof-pic.png';
 import githubIcon from './assets/github_circle_gray.png';
 import linkedInIcon from './assets/linkedin_circle_gray.png';
@@ -6,6 +8,10 @@ import './ProfileInfo.css';
 
 const ProfileInfo = () => (
     <div className="ProfileInfo">
+        <Helmet>
+            <title>Zachary Wagner</title>
+            <meta name="description" content="Zachary Wagner Profile" />
+        </Helmet>
         <div className="ProfileInfo-inner">
             <div className="ProfileInfo-inner-cell">
                 <div className="ProfileInfo-pic-container">
@@ -45,14 +51,12 @@ const ProfileInfo = () => (
                     </a>
                 </div>
                 <div className="ProfileInfo-resume-link">
-                    <a
-                        href="http://resume.zacharywagner.net"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                    <Link
+                        to="/resume"
                         className="ProfileInfo-resume-btn"
                     >
                         View Resume
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

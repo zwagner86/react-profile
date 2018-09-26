@@ -24,7 +24,7 @@ const ResumeHeader = () => {
                     </div>
                 </div>
                 <div className="ResumeHeader-contact-item-table">
-                    <div className="Resume-contact-item-cell">
+                    <div className="ResumeHeader-contact-item-cell">
                         708-203-5356&nbsp;
                         <FontAwesomeIcon
                             className="ResumeHeader-contact-info-icon"

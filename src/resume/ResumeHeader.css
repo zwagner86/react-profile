@@ -8,12 +8,16 @@
 
 .ResumeHeader-personal-info {
     display: inline-block;
+    vertical-align: top;
     text-align: left;
     width: 65%;
 }
 
 .ResumeHeader-personal-info-name {
     margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 1.1;
 }
 
 .ResumeHeader-personal-info-summary {

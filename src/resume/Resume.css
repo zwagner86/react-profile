@@ -1,4 +1,5 @@
 .Resume {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 1000px;
     padding: 40px 0 60px 0;
     margin-left: auto;
@@ -25,168 +26,42 @@
     padding-right: 15px;
 }
 
-/*          .work-accomplishments {
-            padding-top: 15px;
-  
-            .work-accomplishments-header {
-              font-size: 12px;
-              font-weight: 600;
-              color: #35a7ff !important;
-            }
-  
-            .work-accomplishments-summary {
-              line-height: 1.15;
-              padding: 4px 0;
-            }
-  
-            .work-accomplishments-tech {
-              display: table;
-              font-style: italic;
-              font-size: 11px;
-  
-              .tech-label {
-                display: table-cell;
-                min-width: 130px;
-                width: 130px;
-              }
-  
-              .tech-list {
-                display: table-cell;
-                width: 100%;
-                text-align: right;
-                color: #35a7ff !important;
-              }
-  
-            }
-  
-            .work-accomplishments-list {
-              margin-bottom: 0;
-              padding-left: 30px;
-              list-style-type: square;
-            }
-          }
-        }
-      }
-  
-      .right-column {
-        display: table-cell;
-        width: 50%;
-        padding-left: 15px;
-  
-        .padded-bottom {
-          padding-bottom: 20px;
-        }
-  
-        .skills {
-  
-          .skills-graph-container {
-  
-            .skills-graph-guide {
-              display: table;
-              width: 100%;
-              height: 15px;
-  
-              .empty-graph-column {
-                display: table-cell;
-                width: 185px;
-                height: 15px;
-              }
-  
-              .guide-bar {
-                display: table-cell;
-                width: 280px;
-                height: 15px;
-  
-                .guide-bar-quarter {
-                  display: inline-block;
-                  width: 67px;
-                  height: 15px;
-                  border-right: 2px solid #46494C !important;
-                }
-              }
-  
-            }
-  
-            .skills-graph {
-              padding-top: 5px;
-  
-              .skill-table {
-                display: table;
-                width: 100%;
-                height: 50px;
-                padding-bottom: 10px;
-  
-                &:last-child {
-                  padding-bottom: 0;
-                }
-  
-                .skill-text-column {
-                  display: table-cell;
-                  vertical-align: top;
-                  text-align: right;
-                  width: 185px;
-                  height: 100%;
-                  padding-right: 15px;
-                }
-  
-                .graph-column {
-                  display: table-cell;
-                  vertical-align: top;
-                  width: 280px;
-  
-                  .graph-bar {
-                    width: 100%;
-                    height: 20px;
-                    border: 1px solid #46494C !important;
-  
-                    .graph-fill {
-                      height: 18px;
-                      background: #35a7ff !important;
-                    }
-                  }
-                }
-              }
-            }
-          }
-        }
-  
-        .interests {
-          line-height: 1.75;
-        }
-  
-        .education {
-  
-          .dates {
-            color: #35a7ff !important;
-            font-size: 12px;
-            font-weight: 600;
-          }
-  
-          .degree {
-            font-weight: 600;
-          }
-  
-          .major {
-            font-size: 12px;
-            span {
-              color: #35a7ff !important;
-              font-weight: 600;
-            }
-          }
-  
-          .specialization {
-            font-size: 12px;
-  
-            span {
-              color: #35a7ff !important;
-              font-weight: 600;
-            }
-          }
-  
-          .school {
-            font-size: 16px;
-          }
-        }
-      }
-    }
-  } */
+.Resume-right-column {
+  display: table-cell;
+  width: 50%;
+  padding-left: 15px;
+}
+
+.Resume-skills {
+    padding-bottom: 20px;
+}
+
+.Resume-interests {
+    line-height: 1.75;
+    padding-bottom: 20px;
+}
+
+.Resume-education-dates {
+    color: #35a7ff !important;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.Resume-education-degree {
+  font-weight: 600;
+}
+
+.Resume-education-major,
+.Resume-education-specialization {
+  font-size: 12px;
+}
+
+.Resume-education-major > span,
+.Resume-education-specialization > span {
+    color: #35a7ff !important;
+    font-weight: 600;
+}
+
+.Resume-education-school {
+  font-size: 16px;
+}

@@ -3,18 +3,22 @@
 }
 
 .CompanyWorkExperience-positions {
-    display: inline-block;
+    width: 67%;
     padding: 0;
+    float: left;
 }
 
 .CompanyWorkExperience-location {
-    display: inline-block;
+    width: 33%;
     padding: 0;
     font-size: 12px;
     text-align: right;
+    float: right;
 }
 
 .CompanyWorkExperience-name {
+    display: inline-block;
+    width: 100%;
     padding: 0;
     font-size: 16px;
     color: #35a7ff !important;
