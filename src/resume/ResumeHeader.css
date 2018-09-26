@@ -1,0 +1,49 @@
+.ResumeHeader {
+    display: inline-block;
+    width: 100%;
+    height: 135px;
+    border-bottom: 2px solid #46494C !important;
+    padding: 0 20px 23px;
+}
+
+.ResumeHeader-personal-info {
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    width: 65%;
+}
+
+.ResumeHeader-personal-info-name {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+.ResumeHeader-personal-info-summary {
+    font-size: 12px;
+}
+
+.ResumeHeader-contact-info {
+    display: inline-block;
+    text-align: right;
+    width: 35%;
+    height: 100%;
+    font-size: 12px;
+}
+
+.ResumeHeader-contact-item-table {
+    display: table;
+    width: 100%;
+    height: 25%;
+}
+
+.ResumeHeader-contact-item-cell {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.ResumeHeader-contact-info-icon {
+    margin-left: 3px;
+    color: #35a7ff;
+}

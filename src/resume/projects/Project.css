@@ -1,0 +1,33 @@
+.Project {
+    padding-top: 15px;
+}
+
+.Project-header {
+    font-size: 12px;
+    font-weight: 600;
+    color: #35a7ff !important;
+}
+
+.Project-summary {
+    line-height: 1.15;
+    padding: 4px 0;
+}
+
+.Project-tech {
+    display: table;
+    font-style: italic;
+    font-size: 11px;
+}
+
+.Project-tech-label {
+    display: table-cell;
+    min-width: 130px;
+    width: 130px;
+}
+
+.Project-tech-list {
+    display: table-cell;
+    width: 100%;
+    text-align: right;
+    color: #35a7ff !important;
+}
