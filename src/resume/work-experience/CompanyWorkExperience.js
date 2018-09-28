@@ -24,6 +24,7 @@ const CompanyWorkExperience = ({
             </div>
             <div className="CompanyWorkExperience-location">{location}</div>
             <div className="CompanyWorkExperience-name">{name}</div>
+            <div className="CompanyWorkExperience-location-mobile">{location}</div>
         </div>
     );
 };

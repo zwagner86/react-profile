@@ -6,7 +6,8 @@
 }
 
 .SkillBar:last-child {
-    padding-bottom: 0
+    padding-bottom: 0;
+    height: 20px;
 }
 
 .SkillBar-name {
@@ -14,6 +15,7 @@
     vertical-align: top;
     text-align: right;
     width: 185px;
+    min-width: 185px;
     height: 100%;
     padding-right: 15px;
 }
@@ -21,7 +23,7 @@
 .SkillBar-graph {
     display: table-cell;
     vertical-align: top;
-    width: 280px;
+    width: 100%;
 }
 
 .SkillBar-graph-bar {
@@ -33,4 +35,18 @@
 .SkillBar-graph-fill {
     height: 18px;
     background: #35a7ff;
+}
+
+@media (min-width: 768px) {
+    .SkillBar-name {
+        width: 200px;
+        min-width: 200px;
+    }
+}
+
+@media print, (min-width: 992px) {
+    .SkillBar-name {
+        width: 185px;
+        min-width: 185px;
+    }
 }
