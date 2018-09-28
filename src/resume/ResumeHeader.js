@@ -14,7 +14,13 @@ const ResumeHeader = () => {
             <div className="ResumeHeader-contact-info">
                 <div className="ResumeHeader-contact-item-table">
                     <div className="ResumeHeader-contact-item-cell">
-                        wagnerzachary@yahoo.com&nbsp;
+                        <FontAwesomeIcon
+                            className="ResumeHeader-contact-info-icon-mobile"
+                            icon="envelope"
+                            size="lg"
+                            fixedWidth
+                        />
+                        <span className="ResumeHeader-contact-info-text">wagnerzachary@yahoo.com</span>
                         <FontAwesomeIcon
                             className="ResumeHeader-contact-info-icon"
                             icon="envelope"
@@ -25,7 +31,13 @@ const ResumeHeader = () => {
                 </div>
                 <div className="ResumeHeader-contact-item-table">
                     <div className="ResumeHeader-contact-item-cell">
-                        708-203-5356&nbsp;
+                        <FontAwesomeIcon
+                            className="ResumeHeader-contact-info-icon-mobile"
+                            icon="phone"
+                            size="lg"
+                            fixedWidth
+                        />
+                        <span className="ResumeHeader-contact-info-text">708-203-5356</span>
                         <FontAwesomeIcon
                             className="ResumeHeader-contact-info-icon"
                             icon="phone"
@@ -36,7 +48,13 @@ const ResumeHeader = () => {
                 </div>
                 <div className="ResumeHeader-contact-item-table">
                     <div className="ResumeHeader-contact-item-cell">
-                        Chicago, IL&nbsp;
+                        <FontAwesomeIcon
+                            className="ResumeHeader-contact-info-icon-mobile"
+                            icon="map-marker-alt"
+                            size="lg"
+                            fixedWidth
+                        />
+                        <span className="ResumeHeader-contact-info-text">Chicago, IL</span>
                         <FontAwesomeIcon
                             className="ResumeHeader-contact-info-icon"
                             icon="map-marker-alt"
@@ -47,7 +65,13 @@ const ResumeHeader = () => {
                 </div>
                 <div className="ResumeHeader-contact-item-table">
                     <div className="ResumeHeader-contact-item-cell">
-                        www.zacharywagner.net&nbsp;
+                        <FontAwesomeIcon
+                            className="ResumeHeader-contact-info-icon-mobile"
+                            icon="globe-americas"
+                            size="lg"
+                            fixedWidth
+                        />
+                        <span className="ResumeHeader-contact-info-text">www.zacharywagner.net</span>
                         <FontAwesomeIcon
                             className="ResumeHeader-contact-info-icon"
                             icon="globe-americas"

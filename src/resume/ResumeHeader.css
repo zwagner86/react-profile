@@ -1,16 +1,14 @@
 .ResumeHeader {
-    display: inline-block;
+    display: block;
     width: 100%;
-    height: 135px;
     border-bottom: 2px solid #46494C !important;
     padding: 0 20px 23px;
 }
 
 .ResumeHeader-personal-info {
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    width: 65%;
+    display: block;
+    text-align: center;
+    width: 100%;
 }
 
 .ResumeHeader-personal-info-name {
@@ -22,13 +20,14 @@
 
 .ResumeHeader-personal-info-summary {
     font-size: 12px;
+    margin-bottom: 8px;
 }
 
 .ResumeHeader-contact-info {
-    display: inline-block;
-    text-align: right;
-    width: 35%;
-    height: 100%;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 110px;
     font-size: 12px;
 }
 
@@ -43,7 +42,57 @@
     vertical-align: middle;
 }
 
+.ResumeHeader-contact-info-text {
+    margin-left: 4px;
+    margin-right: 0;
+    display: inline;
+}
+
 .ResumeHeader-contact-info-icon {
-    margin-left: 3px;
+    display: none;
+}
+
+.ResumeHeader-contact-info-icon-mobile {
+    display: inline-block;
+    margin-right: 3px;
     color: #35a7ff;
+}
+
+@media print, (min-width: 768px) {
+    .ResumeHeader {
+        display: table;
+    }
+    
+    .ResumeHeader-personal-info {
+        display: table-cell;
+        vertical-align: top;
+        text-align: left;
+        width: 65%;
+        padding-right: 16px;
+    }
+
+    .ResumeHeader-personal-info-summary {
+        margin-bottom: 0;
+    }
+    
+    .ResumeHeader-contact-info {
+        display: table-cell;
+        text-align: right;
+        width: 35%;
+    }
+
+    .ResumeHeader-contact-info-text {
+        margin-left: 0;
+        margin-right: 4px;
+    }
+    
+    .ResumeHeader-contact-info-icon {
+        display: inline-block;
+        margin-left: 3px;
+        color: #35a7ff;
+    }
+    
+    .ResumeHeader-contact-info-icon-mobile {
+        display: none;
+    }
 }
