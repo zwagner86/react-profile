@@ -20,7 +20,7 @@ const slalomInfo = {
     positions: [
         {
             role: 'Senior Software Engineer',
-            dates: '09/2016 - Present'
+            dates: '09/2016 - 12/2016'
         },
         {
             role: 'Software Engineer',
