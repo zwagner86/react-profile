@@ -35,6 +35,14 @@
     width: 100%;
 }
 
+.Resume-work-experience {
+    padding-bottom: 15px;
+}
+
+.Resume-work-experience:last-child {
+    padding-bottom: 0;
+}
+
 .Resume-skills {
     padding-bottom: 20px;
 }
@@ -67,6 +75,20 @@
 
 .Resume-education-school {
     font-size: 16px;
+}
+
+.HorizontalRule {
+    border-bottom: 1px solid #b1b1b1;
+    margin: 1.6em 32px 1.8em;
+    height: 10px;
+    display: block;
+    position: relative;
+    text-align: center;
+    background: none;
+}
+
+.HorizontalRule:last-child {
+    display: none;
 }
 
 @media print, (min-width: 992px) {

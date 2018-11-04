@@ -23,7 +23,7 @@ const Project = ({
 }) => {
     return (
         <div className="Project">
-            <div className="Project-header">{role} – {client} – {duration}</div>
+            <div className="Project-header">{`${role}${(client) ? ` - ${client}` : ''} – ${duration}`}</div>
             <div className="Project-summary">{summary}</div>
             <div className="Project-tech">
                 <div className="Project-tech-label">Technologies Used:</div>
@@ -36,7 +36,7 @@ const Project = ({
 Project.propTypes = {
     project: PropTypes.shape({
         role: PropTypes.string.isRequired,
-        client: PropTypes.string.isRequired,
+        client: PropTypes.string,
         duration: PropTypes.string.isRequired,
         summary: PropTypes.string.isRequired,
         tech: PropTypes.arrayOf(PropTypes.string).isRequired

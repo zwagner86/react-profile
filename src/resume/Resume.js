@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {Helmet} from "react-helmet";
 import resumeData from './resume-data';
 import ResumeHeader from './ResumeHeader';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
-import Project from './projects/Project';
+import Projects from './projects/Projects';
 import SkillsGraph from './skills-graph/SkillsGraph';
 import './Resume.css';
 
@@ -12,9 +12,7 @@ const Resume = () => {
         createInterestStringFromArray,
         education,
         interests,
-        slalomInfo,
-        slalomPositions,
-        slalomProjects,
+        workExperience,
         skills
     } = resumeData;
 
@@ -29,16 +27,26 @@ const Resume = () => {
                 <div className="Resume-left-column">
                     <div className="Resume-section Resume-experience">
                         <div className="Resume-section-header">Work Experience</div>
-                        <CompanyWorkExperience
-                            info={slalomInfo}
-                            positions={slalomPositions}
-                        />
-                        {slalomProjects.map((project, i) => {
+                        {workExperience.map((job, i) => {
+                            const {
+                                name,
+                                location,
+                                overview,
+                                positions,
+                                projects
+                            } = job;
+
                             return (
-                                <Project
-                                    key={i}
-                                    project={project}
-                                />
+                                <Fragment key={i}>
+                                    <CompanyWorkExperience
+                                        name={name}
+                                        location={location}
+                                        overview={overview}
+                                        positions={positions}
+                                    />
+                                    <Projects projects={projects} />
+                                    <div className="HorizontalRule" />
+                                </Fragment>
                             );
                         })}
                     </div>
