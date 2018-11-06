@@ -13,7 +13,7 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
-if (process.env.CONTEXT === 'production') {
+if (process.env.NODE_ENV === 'production') {
     ReactGA.initialize('UA-123791717-1');
 }
 

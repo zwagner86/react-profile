@@ -10,7 +10,7 @@ import './Resume.css';
 
 export default class Resume extends Component {
     componentDidMount() {
-        if (process.env.CONTEXT === 'production') {
+        if (process.env.NODE_ENV === 'production') {
             ReactGA.set({page: window.location.pathname});
             ReactGA.pageview(window.location.pathname);
         }
