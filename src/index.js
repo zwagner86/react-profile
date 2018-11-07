@@ -14,7 +14,7 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 if (process.env.NODE_ENV === 'production') {
-    ReactGA.initialize('UA-123791717-1');
+    ReactGA.initialize('UA-128773850-1');
 }
 
 library.add(faEnvelope, faGlobeAmericas, faMapMarkerAlt, faPhone, faStar);
