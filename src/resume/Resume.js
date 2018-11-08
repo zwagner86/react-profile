@@ -24,12 +24,13 @@ export default class Resume extends Component {
             workExperience,
             skills
         } = resumeData;
+        const title = "Zachary Wagner - Software Engineer - Resume"
 
         return (
             <div className="Resume">
                 <Helmet>
-                    <title>Zachary Wagner - Resume</title>
-                    <meta name="description" content="Zachary Wagner Resume" />
+                    <title>{title}</title>
+                    <meta property="og:title" content={title} />
                 </Helmet>
                 <ResumeHeader />
                 <div className="Resume-body">

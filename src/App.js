@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import {
     BrowserRouter as Router,
     Redirect,
     Route,
     Switch
 } from 'react-router-dom';
+import SEOMeta from './common/SEOMeta';
 import Profile from './profile/Profile';
 import Resume from './resume/Resume';
 
@@ -14,21 +15,24 @@ const redirectToHome = () => {
 
 const App = () => {
     return (
-        <Router>
-            <Switch>
-                <Route
-                    path="/"
-                    exact
-                    component={Profile}
-                />
-                <Route
-                    path="/resume"
-                    exact
-                    component={Resume}
-                />
-                <Route render={redirectToHome} />
-            </Switch>
-        </Router>
+        <Fragment>
+            <SEOMeta />
+            <Router>
+                <Switch>
+                    <Route
+                        path="/"
+                        exact
+                        component={Profile}
+                    />
+                    <Route
+                        path="/resume"
+                        exact
+                        component={Resume}
+                    />
+                    <Route render={redirectToHome} />
+                </Switch>
+            </Router>
+        </Fragment>
     );
 };
 
