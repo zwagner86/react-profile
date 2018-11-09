@@ -1,6 +1,6 @@
 .ProfileInfo {
     width: 100%;
-    background-color: #35a7ff;
+    background-color: #045e8e;
     color: #ffffff;
     padding-left: 15px;
     padding-right: 15px;
@@ -40,16 +40,21 @@
     padding-top: 15px;
 }
 
-.ProfileInfo-social-img {
-    width: 40px;
+.ProfileInfo-social-icon {
     margin: 10px 5px;
+    color: #ffffff;
 }
 
-.ProfileInfo-linkedin-img {
+.ProfileInfo-social-link:hover > .ProfileInfo-social-icon,
+.ProfileInfo-social-link:focus > .ProfileInfo-social-icon {
+    color: #e4e4e4;
+}
+
+.ProfileInfo-linkedin-link > .ProfileInfo-social-icon {
     margin-left: 0;
 }
 
-.ProfileInfo-github-img {
+.ProfileInfo-github-link > .ProfileInfo-social-icon {
     margin-right: 0;
 }
 
@@ -70,14 +75,14 @@
     white-space: nowrap;
     vertical-align: middle;
     background-color: #ffffff;
-    border-color: #35a7ff;
+    border-color: #045e8e;
     border-radius: 0;
-    color: #35a7ff;
+    color: #045e8e;
 }
 
 .ProfileInfo-resume-btn:hover,
 .ProfileInfo-resume-btn:focus {
-    background-color: #d8d9d9;
+    background-color: #e4e4e4;
 }
 
 @media (min-width: 768px) {

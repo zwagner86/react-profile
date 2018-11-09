@@ -5,7 +5,7 @@
 .Project-header {
     font-size: 12px;
     font-weight: 600;
-    color: #35a7ff !important;
+    color: #045e8e !important;
 }
 
 .Project-summary {
@@ -29,5 +29,5 @@
     display: table-cell;
     width: 100%;
     text-align: right;
-    color: #35a7ff !important;
+    color: #045e8e !important;
 }

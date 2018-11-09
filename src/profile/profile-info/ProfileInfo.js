@@ -1,8 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import profilePic from './assets/prof-pic.png';
-import githubIcon from './assets/github_circle_gray.png';
-import linkedInIcon from './assets/linkedin_circle_gray.png';
 import './ProfileInfo.css';
 
 const ProfileInfo = () => (
@@ -26,10 +25,11 @@ const ProfileInfo = () => (
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <img
-                            className="ProfileInfo-social-img ProfileInfo-linkedin-img"
-                            src={linkedInIcon}
-                            alt="LinkedIn Icon"
+                        <FontAwesomeIcon
+                            className="ProfileInfo-social-icon"
+                            icon={['fab', 'linkedin']}
+                            size="2x"
+                            fixedWidth
                         />
                     </a>
                     <a
@@ -38,10 +38,11 @@ const ProfileInfo = () => (
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <img
-                            className="ProfileInfo-social-img ProfileInfo-github-img"
-                            src={githubIcon}
-                            alt="GitHub Icon"
+                        <FontAwesomeIcon
+                            className="ProfileInfo-social-icon"
+                            icon={['fab', 'github']}
+                            size="2x"
+                            fixedWidth
                         />
                     </a>
                 </div>

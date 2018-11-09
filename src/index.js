@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {library} from '@fortawesome/fontawesome-svg-core';
+import {fab} from '@fortawesome/free-brands-svg-icons';
 import {
     faEnvelope,
     faGlobeAmericas,
@@ -17,7 +18,7 @@ if (process.env.NODE_ENV === 'production') {
     ReactGA.initialize('UA-128773850-1');
 }
 
-library.add(faEnvelope, faGlobeAmericas, faMapMarkerAlt, faPhone, faStar);
+library.add(fab, faEnvelope, faGlobeAmericas, faMapMarkerAlt, faPhone, faStar);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

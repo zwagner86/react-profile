@@ -25,7 +25,7 @@
 }
 
 .Skills-section-header {
-    color: #35a7ff;
+    color: #045e8e;
     font-style: italic;
     font-weight: 600;
     font-size: 20px;
@@ -40,17 +40,17 @@
 }
 
 .Skills-section-highlight {
-    color: #35a7ff;
+    color: #045e8e;
 }
 
 .Skills-section-employer-link {
-    color: #35a7ff;
+    color: #045e8e;
 }
 
 .Skills-section-employer-link:hover,
 .Skills-section-employer-link:active,
 .Skills-section-employer-link:focus {
-    color: #1499ff;
+    color: #034162;
 }
 
 .Skills-languages,
@@ -60,7 +60,7 @@
 
 .Skills-languages-description,
 .Skills-frameworks-description {
-    color: #35a7ff;
+    color: #045e8e;
     font-size: 16px;
     padding-bottom: 20px;
 }
