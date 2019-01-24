@@ -1,12 +1,20 @@
 import React, {Component, Fragment} from 'react';
 import ReactGA from 'react-ga';
 import {Helmet} from "react-helmet";
-import resumeData from './resume-data';
+import resumeData from '../data/resume';
 import ResumeHeader from './ResumeHeader';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
 import Projects from './projects/Projects';
 import SkillsGraph from './skills-graph/SkillsGraph';
 import './Resume.css';
+
+const createInterestStringFromArray = array => {
+    let interestString = '';
+    for ( let interestItem of array ) {
+        interestString += interestItem + '  |  ';
+    }
+    return interestString.slice(0, interestString.length - 5);
+};
 
 export default class Resume extends Component {
     componentDidMount() {
@@ -18,7 +26,6 @@ export default class Resume extends Component {
 
     render() {
         const {
-            createInterestStringFromArray,
             education,
             interests,
             workExperience,

@@ -7,7 +7,7 @@ const SkillTile = ({
     tileData: {
         star,
         name,
-        logoPath
+        logo
     }
 }) => {
     return (
@@ -27,7 +27,7 @@ const SkillTile = ({
                 <div className="SkillTile-image-cell">
                     <img
                         className="SkillTile-image"
-                        src={logoPath}
+                        src={logo}
                         alt={name}
                     />
                 </div>

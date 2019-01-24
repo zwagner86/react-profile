@@ -1,5 +1,3 @@
-import * as logos from "./assets/logos";
-
 const whatDescStr = "Like I said above, I have skills across the full tech stack but have developed a " +
     "passion for front-end.  There's nothing quite like the gratification of seeing your creations in the " +
     "browser and out on the web!";
@@ -9,119 +7,119 @@ const skillData = {
     languages: [
         {
             name: "JavaScript",
-            logoPath: logos.javascriptLogo,
+            logoName: "javascriptLogo",
             star: true
         },
         {
             name: "HTML",
-            logoPath: logos.html5Logo,
+            logoName: "html5Logo",
             star: true
         },
         {
             name: "CSS",
-            logoPath: logos.cssLogo,
+            logoName: "cssLogo",
             star: true
         },
         {
             name: "Python",
-            logoPath: logos.pythonLogo,
+            logoName: "pythonLogo",
             star: false
         },
         {
             name: "Java",
-            logoPath: logos.javaLogo,
+            logoName: "javaLogo",
             star: false
         },
         {
             name: "C/C++",
-            logoPath: logos.cplusplusLogo,
+            logoName: "cplusplusLogo",
             star: false
         }
     ],
     frameworks: [
         {
             name: "React",
-            logoPath: logos.reactLogo,
+            logoName: "reactLogo",
             star: true
         },
         {
             name: "Angular",
-            logoPath: logos.angularLogo,
+            logoName: "angularLogo",
             star: false
         },
         {
             name: "jQuery",
-            logoPath: logos.jqueryLogo,
+            logoName: "jqueryLogo",
             star: true
         },
         {
             name: "Redux",
-            logoPath: logos.reduxLogo,
+            logoName: "reduxLogo",
             star: true
         },
         {
             name: "Bootstrap",
-            logoPath: logos.bootstrapLogo,
+            logoName: "bootstrapLogo",
             star: true
         },
         {
             name: "Less",
-            logoPath: logos.lessLogo,
+            logoName: "lessLogo",
             star: true
         },
         {
             name: "Sass",
-            logoPath: logos.sassLogo,
+            logoName: "sassLogo",
             star: true
         },
         {
             name: "Grunt",
-            logoPath: logos.gruntLogo,
+            logoName: "gruntLogo",
             star: false
         },
         {
             name: "Gulp",
-            logoPath: logos.gulpLogo,
+            logoName: "gulpLogo",
             star: true
         },
         {
             name: "Webpack",
-            logoPath: logos.webpackLogo,
+            logoName: "webpackLogo",
             star: true
         },
         {
             name: "Node",
-            logoPath: logos.nodeLogo,
+            logoName: "nodeLogo",
             star: true
         },
         {
             name: "Express",
-            logoPath: logos.expressLogo,
+            logoName: "expressLogo",
             star: true
         },
         {
             name: "TypeScript",
-            logoPath: logos.typescriptLogo,
+            logoName: "typescriptLogo",
             star: false
         },
         {
             name: "Pug",
-            logoPath: logos.pugLogo,
+            logoName: "pugLogo",
             star: false
         },
         {
             name: "Jasmine",
-            logoPath: logos.jasmineLogo,
+            logoName: "jasmineLogo",
             star: true
         },
         {
             name: "Karma",
-            logoPath: logos.karmaLogo,
+            logoName: "karmaLogo",
             star: true
         },
         {
             name: "Spring",
-            logoPath: logos.springLogo,
+            logoName: "springLogo",
             star: false
         }
     ]
