@@ -1,48 +1,17 @@
 import React, {Component} from 'react';
-import axios from 'axios';
-import skillData from './skill-data';
+import skillData from '../../data/skills';
 import SkillTile from './SkillTile';
 import * as logos from "./assets/logos";
 import './Skills.css';
 
 export default class Skills extends Component {
     state = {
-        isLoading: true,
-        frameworks: null,
-        languages: null
+        frameworks: skillData.frameworks,
+        languages: skillData.languages
     };
-
-    componentDidMount() {
-        axios.get('/.netlify/functions/skills')
-            .then(response => {
-                // handle success
-                console.log(response);
-                const {
-                    data: {
-                        data: {
-                            frameworks,
-                            languages
-                        }
-                    }
-                } = response;
-
-                this.setState({
-                    frameworks,
-                    languages,
-                    isLoading: false
-                });
-            })
-            .catch(error => {
-                // handle error
-                console.log(error);
-            });
-    }
-
-
 
     render() {
         const {
-            isLoading,
             frameworks,
             languages
         } = this.state;
@@ -53,26 +22,20 @@ export default class Skills extends Component {
                     <div className="Skills-section">
                         <div className="Skills-section-header">WHO?</div>
                         <div className="Skills-section-info">
-                            {(isLoading)
-                                ? (
-                                    <div>Loading...</div>
-                                ) : (
-                                    <div className="Skills-section-description">
-                                        <span>Hey, what&apos;s up? My full name is </span>
-                                        <span className="Skills-section-highlight">Zachary </span>
-                                        <span>but you can call me </span>
-                                        <span className="Skills-section-highlight">Zach</span>
-                                        <span>. I am a </span>
-                                        <span className="Skills-section-highlight">Software Engineer </span>
-                                        <span>with </span>
-                                        <span className="Skills-section-highlight">full-stack experience</span>
-                                        <span>, but a passion for working in the </span>
-                                        <span className="Skills-section-highlight">front-end</span>
-                                        <span>. For example, I made this page so I could play around with </span>
-                                        <span className="Skills-section-highlight">React</span>!
-                                    </div>
-                                )
-                            }
+                            <div className="Skills-section-description">
+                                <span>Hey, what&apos;s up? My full name is </span>
+                                <span className="Skills-section-highlight">Zachary </span>
+                                <span>but you can call me </span>
+                                <span className="Skills-section-highlight">Zach</span>
+                                <span>. I am a </span>
+                                <span className="Skills-section-highlight">Software Engineer </span>
+                                <span>with </span>
+                                <span className="Skills-section-highlight">full-stack experience</span>
+                                <span>, but a passion for working in the </span>
+                                <span className="Skills-section-highlight">front-end</span>
+                                <span>. For example, I made this page so I could play around with </span>
+                                <span className="Skills-section-highlight">React</span>!
+                            </div>
                         </div>
                     </div>
                     <div className="Skills-section">
@@ -82,7 +45,7 @@ export default class Skills extends Component {
                             <div className="Skills-languages">
                                 <div className="Skills-languages-description">Here are some languages I have experience with:</div>
                                 <div className="Skills-languages-list">
-                                    {skillData.languages.map(({star, name, logoName}) => {
+                                    {languages.map(({star, name, logoName}) => {
                                         const tileData = {
                                             star,
                                             name,
@@ -103,7 +66,7 @@ export default class Skills extends Component {
                                     And here are some frameworks, libraries, and tools I&apos;ve used:
                                 </div>
                                 <div className="Skills-frameworks-list">
-                                    {skillData.frameworks.map(({star, name, logoName}) => {
+                                    {frameworks.map(({star, name, logoName}) => {
                                         const tileData = {
                                             star,
                                             name,

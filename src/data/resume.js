@@ -1,19 +1,3 @@
-const createTechStringFromArray = array => {
-    let techString = '';
-    for ( let techItem of array ) {
-        techString += techItem + ', ';
-    }
-    return techString.slice(0, techString.length - 2);
-};
-
-const createInterestStringFromArray = array => {
-    let interestString = '';
-    for ( let interestItem of array ) {
-        interestString += interestItem + '  |  ';
-    }
-    return interestString.slice(0, interestString.length - 5);
-};
-
 const slalomInfo = {
     name: 'Slalom Consulting',
     location: 'Chicago, IL',
@@ -313,8 +297,6 @@ const skills = [
 ];
 
 const resumeData = {
-    createTechStringFromArray,
-    createInterestStringFromArray,
     workExperience: [
         spotheroInfo,
         slalomInfo
