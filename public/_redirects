@@ -1,2 +1,2 @@
-/api/v1/:function    /.netlify/functions/:function
+/api/v1/:function    /.netlify/functions/:function    200
 /*    /index.html    200
