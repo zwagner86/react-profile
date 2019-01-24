@@ -8,6 +8,9 @@
 
 # production
 /build
+/lambda
+
+/.netlify
 
 # IDEs and editors
 /.idea
