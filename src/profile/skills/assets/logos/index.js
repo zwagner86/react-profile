@@ -20,6 +20,7 @@ import reduxLogo from "./redux.png";
 import sassLogo from "./sass.png";
 import springLogo from "./spring.png";
 import typescriptLogo from "./typescript.png";
+import vueLogo from "./vue.png";
 import webpackLogo from "./webpack.png";
 
 export {
@@ -45,5 +46,6 @@ export {
     sassLogo,
     springLogo,
     typescriptLogo,
+    vueLogo,
     webpackLogo
 };

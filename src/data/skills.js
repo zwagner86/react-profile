@@ -43,6 +43,11 @@ const skillData = {
             star: true
         },
         {
+            name: "Vue",
+            logoName: "vueLogo",
+            star: false
+        },
+        {
             name: "Angular",
             logoName: "angularLogo",
             star: false
