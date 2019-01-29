@@ -1,0 +1,86 @@
+.Menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 600;
+    width: calc(100vw - 48px);
+    height: 100%;
+    transform: translate3d(calc(-1 * (100vw - 48px)), 0, 0);
+    transition: transform 0.35s;
+}
+
+.Menu.Menu-is-open {
+    transform: translate3d(0, 0, 0);
+}
+
+.Menu-toggle {
+    position: absolute;
+    top: 0;
+    right: -48px;
+    width: 48px;
+    height: 48px;
+}
+
+.Menu-toggle-button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+}
+
+.Menu-is-open .Menu-toggle {
+    background: #ffffff;
+}
+
+.Menu-toggle-button:active,
+.Menu-toggle-button:hover,
+.Menu-toggle-button:focus {
+    outline: none;
+}
+
+.Menu-toggle-icon {
+    color: #ffffff;
+}
+
+.Menu-is-open .Menu-toggle-icon {
+    color: #045e8e;
+}
+
+.Menu-links {
+    height: 100%;
+}
+
+.Menu-links ul {
+    margin: 0;
+}
+
+menu ul li a,
+menu ul li label {
+    display: block;
+    text-align: center;
+    padding: 0 20px;
+    line-height: 60px;
+    text-decoration: none;
+    color: #000;
+}
+
+menu ul li a:hover,
+menu ul li label:hover {
+    color: #666;
+}
+
+@media (min-width: 768px) {
+    .Menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 600;
+        width: 240px;
+        height: 100%;
+        transform: translate3d(-240px, 0, 0);
+        transition: transform 0.35s;
+    }
+}
