@@ -40,7 +40,7 @@ SkillTile.propTypes = {
     tileData: PropTypes.shape({
         star: PropTypes.bool,
         name: PropTypes.string,
-        logoPath: PropTypes.string,
+        logo: PropTypes.string
     }).isRequired
 };
 
