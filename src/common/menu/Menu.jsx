@@ -54,6 +54,17 @@ export default class Menu extends Component {
                     >
                         Resume
                     </NavLink>
+                    <div className="Menu-link-divider-block">
+                        <div className="Menu-link-divider">
+                            <span>Other Site Versions</span>
+                        </div>
+                    </div>
+                    <a
+                        href="https://vue.zacharywagner.net"
+                        className="Menu-link"
+                    >
+                        Vue
+                    </a>
                 </div>
             </div>
         );

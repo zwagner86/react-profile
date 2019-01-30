@@ -37,6 +37,11 @@ export default class Skills extends Component {
                                 <span className="Skills-section-highlight">React</span>!
                             </div>
                         </div>
+                        <div className="Skills-section-info">
+                            <div className="Skills-section-description">
+                                I also made a version of this page using Vue!  You can get there using the menu.  It really isn&apos;t any different.  I just wanted to be able to compare the frameworks firsthand.
+                            </div>
+                        </div>
                     </div>
                     <div className="Skills-section">
                         <div className="Skills-section-header">WHAT?</div>
