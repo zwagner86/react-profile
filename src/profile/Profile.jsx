@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import ReactGA from 'react-ga';
+import Menu from '../common/menu/Menu';
 import ProfileInfo from './profile-info/ProfileInfo';
 import Skills from './skills/Skills';
 import './Profile.css';
@@ -15,6 +16,7 @@ export default class Profile extends Component {
     render() {
         return (
             <div className="Profile">
+                <Menu />
                 <ProfileInfo />
                 <Skills />
             </div>

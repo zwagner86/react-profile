@@ -1,0 +1,127 @@
+.Menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 600;
+    width: 100vw;
+    height: auto;
+    transform: translate3d(-100vw, 0, 0);
+    transition: transform 0.35s;
+}
+
+.Menu.Menu-is-open {
+    transform: translate3d(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(70,73,76, 0.6);
+}
+
+.Menu-toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    transform: translateX(56px);
+    transition: transform 0.2s;
+}
+
+.Menu-is-open .Menu-toggle {
+    transform: translateX(0);
+}
+
+.Menu-toggle-button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    width: 56px;
+    height: 56px;
+    padding: 0;
+}
+
+.Menu-toggle-button:active,
+.Menu-toggle-button:hover,
+.Menu-toggle-button:focus {
+    outline: none;
+}
+
+.Menu-toggle-icon {
+    color: #ffffff;
+}
+
+.Menu-is-open .Menu-toggle-icon {
+    color: #045e8e;
+}
+
+.Menu-links {
+    height: 100%;
+    padding: 56px 0 24px;
+}
+
+.Menu-link {
+    color: #045e8e;
+    display: block;
+    padding: 16px;
+}
+
+.Menu-link:active,
+.Menu-link:hover,
+.Menu-link:focus {
+    color: #034162;
+    background: #e4e4e4;
+}
+
+.Menu-link-active {
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    .Menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 600;
+        width: 240px;
+        height: 100%;
+        transform: translate3d(-240px, 0, 0);
+        transition: transform 0.35s;
+    }
+
+    .Menu.Menu-is-open {
+        box-shadow: 4px 0 8px 0 rgba(70,73,76, 0.6);
+    }
+}
+
+
+/* Resume style overrides */
+.Resume .Menu {
+    background: #045e8e;
+}
+
+.Resume .Menu.Menu-is-open {
+    box-shadow: 4px 0 8px 0 rgba(0,0,0, 0.5);
+}
+
+.Resume .Menu-toggle-icon {
+    color: #045e8e;
+}
+
+.Resume .Menu-is-open .Menu-toggle-icon {
+    color: #ffffff;
+}
+
+.Resume .Menu-link {
+    color: #ffffff;
+}
+
+.Resume .Menu-link:active,
+.Resume .Menu-link:hover,
+.Resume .Menu-link:focus {
+    color: #034162;
+    background: #e4e4e4;
+}
+
+@media print {
+    .Menu {
+        display: none;
+    }
+}

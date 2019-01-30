@@ -1,6 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import ReactGA from 'react-ga';
 import {Helmet} from "react-helmet";
+import Menu from '../common/menu/Menu';
 import resumeData from '../data/resume';
 import ResumeHeader from './ResumeHeader';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
@@ -39,6 +40,7 @@ export default class Resume extends Component {
                     <title>{title}</title>
                     <meta property="og:title" content={title} />
                 </Helmet>
+                <Menu />
                 <ResumeHeader />
                 <div className="Resume-body">
                     <div className="Resume-left-column">
