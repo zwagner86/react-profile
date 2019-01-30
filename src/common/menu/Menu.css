@@ -145,6 +145,15 @@
     background: #e4e4e4;
 }
 
+.Resume .Menu-link-divider {
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.Resume .Menu-link-divider > span {
+    background: #045e8e;
+}
+
 @media print {
     .Menu {
         display: none;
