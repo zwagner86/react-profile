@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {NavLink} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import './Menu.css';
 
@@ -20,6 +21,7 @@ export default class Menu extends Component {
             isMenuOpen
         } = this.state;
         const classname = `Menu${isMenuOpen ? ' Menu-is-open' : ''}`;
+        const iconName = (isMenuOpen) ? 'times' : 'bars';
 
         return (
             <div className={classname}>
@@ -30,23 +32,28 @@ export default class Menu extends Component {
                     >
                         <FontAwesomeIcon
                             className="Menu-toggle-icon"
-                            icon="bars"
+                            icon={iconName}
                             size="3x"
                         />
                     </button>
                 </div>
                 <div className="Menu-links">
-                    <ul>
-                        <li>
-                            <a href="#">Menu-1</a>
-                        </li>
-                        <li>
-                            <a href="#">Menu-2</a>
-                        </li>
-                        <li>
-                            <a href="#">Menu-3</a>
-                        </li>
-                    </ul>
+                    <NavLink
+                        to="/"
+                        className="Menu-link"
+                        activeClassName="Menu-link-active"
+                        exact
+                    >
+                        Home
+                    </NavLink>
+                    <NavLink
+                        to="/resume"
+                        className="Menu-link"
+                        activeClassName="Menu-link-active"
+                        exact
+                    >
+                        Resume
+                    </NavLink>
                 </div>
             </div>
         );

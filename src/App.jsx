@@ -5,7 +5,7 @@ import {
     Route,
     Switch
 } from 'react-router-dom';
-import SEOMeta from './common/SEOMeta';
+import SEOMeta from './common/meta/SEOMeta';
 import Profile from './profile/Profile';
 import Resume from './resume/Resume';
 

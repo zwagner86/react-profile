@@ -4,35 +4,38 @@
     left: 0;
     background: #ffffff;
     z-index: 600;
-    width: calc(100vw - 48px);
-    height: 100%;
-    transform: translate3d(calc(-1 * (100vw - 48px)), 0, 0);
+    width: 100vw;
+    height: auto;
+    transform: translate3d(-100vw, 0, 0);
     transition: transform 0.35s;
 }
 
 .Menu.Menu-is-open {
     transform: translate3d(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(70,73,76, 0.6);
 }
 
 .Menu-toggle {
     position: absolute;
     top: 0;
-    right: -48px;
-    width: 48px;
-    height: 48px;
+    right: 0;
+    width: 56px;
+    height: 56px;
+    transform: translateX(56px);
+    transition: transform 0.2s;
+}
+
+.Menu-is-open .Menu-toggle {
+    transform: translateX(0);
 }
 
 .Menu-toggle-button {
     cursor: pointer;
     background: transparent;
     border: none;
-    width: 48px;
-    height: 48px;
+    width: 56px;
+    height: 56px;
     padding: 0;
-}
-
-.Menu-is-open .Menu-toggle {
-    background: #ffffff;
 }
 
 .Menu-toggle-button:active,
@@ -51,25 +54,24 @@
 
 .Menu-links {
     height: 100%;
+    padding: 56px 0 24px;
 }
 
-.Menu-links ul {
-    margin: 0;
-}
-
-menu ul li a,
-menu ul li label {
+.Menu-link {
+    color: #045e8e;
     display: block;
-    text-align: center;
-    padding: 0 20px;
-    line-height: 60px;
-    text-decoration: none;
-    color: #000;
+    padding: 16px;
 }
 
-menu ul li a:hover,
-menu ul li label:hover {
-    color: #666;
+.Menu-link:active,
+.Menu-link:hover,
+.Menu-link:focus {
+    color: #034162;
+    background: #e4e4e4;
+}
+
+.Menu-link-active {
+    font-weight: 600;
 }
 
 @media (min-width: 768px) {
@@ -82,5 +84,44 @@ menu ul li label:hover {
         height: 100%;
         transform: translate3d(-240px, 0, 0);
         transition: transform 0.35s;
+    }
+
+    .Menu.Menu-is-open {
+        box-shadow: 4px 0 8px 0 rgba(70,73,76, 0.6);
+    }
+}
+
+
+/* Resume style overrides */
+.Resume .Menu {
+    background: #045e8e;
+}
+
+.Resume .Menu.Menu-is-open {
+    box-shadow: 4px 0 8px 0 rgba(0,0,0, 0.5);
+}
+
+.Resume .Menu-toggle-icon {
+    color: #045e8e;
+}
+
+.Resume .Menu-is-open .Menu-toggle-icon {
+    color: #ffffff;
+}
+
+.Resume .Menu-link {
+    color: #ffffff;
+}
+
+.Resume .Menu-link:active,
+.Resume .Menu-link:hover,
+.Resume .Menu-link:focus {
+    color: #034162;
+    background: #e4e4e4;
+}
+
+@media print {
+    .Menu {
+        display: none;
     }
 }
