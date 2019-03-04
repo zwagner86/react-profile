@@ -39,7 +39,7 @@ export default class Skills extends Component {
                         </div>
                         <div className="Skills-section-info">
                             <div className="Skills-section-description">
-                                I also made a version of this page using Vue!  You can get there using the menu.  It really isn&apos;t any different.  I just wanted to be able to compare the frameworks firsthand.
+                                I also made versions of this page using Vue and ReasonML!  You can get to those using the menu.  They really aren&apos;t any different.  I just wanted to be able to compare the frameworks firsthand.
                             </div>
                         </div>
                     </div>

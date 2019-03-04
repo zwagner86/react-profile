@@ -65,6 +65,12 @@ export default class Menu extends Component {
                     >
                         Vue
                     </a>
+                    <a
+                        href="https://reasonml.zacharywagner.net"
+                        className="Menu-link"
+                    >
+                        ReasonML
+                    </a>
                 </div>
             </div>
         );
