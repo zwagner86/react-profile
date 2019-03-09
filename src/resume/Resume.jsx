@@ -1,8 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import ReactGA from 'react-ga';
 import {Helmet} from "react-helmet";
+import {resume} from "personal-site-data";
 import Menu from '../common/menu/Menu';
-import resumeData from '../data/resume';
 import ResumeHeader from './ResumeHeader';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
 import Projects from './projects/Projects';
@@ -31,7 +31,7 @@ export default class Resume extends Component {
             interests,
             workExperience,
             skills
-        } = resumeData;
+        } = resume;
         const title = "Zachary Wagner - Software Engineer - Resume"
 
         return (

@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import profilePic from './assets/prof-pic.png';
+import {profileImage} from 'personal-site-data';
 import './ProfileInfo.css';
 
 const ProfileInfo = () => (
@@ -11,7 +11,7 @@ const ProfileInfo = () => (
                 <div className="ProfileInfo-pic-container">
                     <img
                         className="ProfileInfo-pic-img"
-                        src={profilePic}
+                        src={profileImage}
                         alt="Zachary Wagner Profile" />
                 </div>
                 <h1>Hey, I&apos;m Zach,</h1>
