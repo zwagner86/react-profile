@@ -89,8 +89,8 @@ const Skills = () => {
                         const {
                             name,
                             location,
-                            from: fromDate,
-                            to: toDate,
+                            fromDate,
+                            toDate,
                             url,
                             title
                         } = company;
