@@ -1,0 +1,44 @@
+.About {
+    color: #46494C;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+    .About {
+        width: 50%;
+        height: auto;
+        position: absolute !important;
+        right: 0;
+    }
+}
+
+.About-inner {
+    padding: 30px 0;
+}
+
+.About-section {
+    padding-bottom: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.About-section-header {
+    color: #045e8e;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.About-section-info {
+    padding-bottom: 15px;
+}
+
+.About-section-description {
+    text-indent: 20px;
+}
+
+.About-section-highlight {
+    color: #045e8e;
+}

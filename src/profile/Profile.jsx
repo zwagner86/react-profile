@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import ReactGA from 'react-ga';
 import Menu from '../common/menu/Menu';
-import ProfileInfo from './profile-info/ProfileInfo';
-import Skills from './skills/Skills';
+import About from './about/About';
+import Summary from './summary/Summary';
 import './Profile.css';
 
 export default class Profile extends Component {
@@ -17,8 +17,8 @@ export default class Profile extends Component {
         return (
             <div className="Profile">
                 <Menu />
-                <ProfileInfo />
-                <Skills />
+                <Summary />
+                <About />
             </div>
         );
     }

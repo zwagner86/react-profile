@@ -1,0 +1,9 @@
+.Company-employer-link {
+    color: #045e8e;
+}
+
+.Company-employer-link:hover,
+.Company-employer-link:active,
+.Company-employer-link:focus {
+    color: #034162;
+}

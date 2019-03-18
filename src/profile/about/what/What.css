@@ -1,0 +1,16 @@
+.What-languages,
+.What-frameworks {
+    padding-top: 30px;
+}
+
+.What-languages-description,
+.What-frameworks-description {
+    color: #045e8e;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.What-languages-list,
+.What-frameworks-list {
+    text-align: center;
+}

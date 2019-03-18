@@ -1,4 +1,4 @@
-.ProfileInfo {
+.Summary {
     width: 100%;
     background-color: #045e8e;
     color: #ffffff;
@@ -6,7 +6,7 @@
     padding-right: 15px;
 }
 
-.ProfileInfo-inner {
+.Summary-inner {
     padding: 30px 0;
     text-align: center;
     display: table;
@@ -14,16 +14,16 @@
     height: 100%;
 }
 
-.ProfileInfo-inner-cell {
+.Summary-inner-cell {
     display: table-cell;
     vertical-align: middle;
 }
 
-.ProfileInfo-pic-container {
+.Summary-pic-container {
     padding-bottom: 25px;
 }
 
-.ProfileInfo-pic-img {
+.Summary-pic-img {
     width: 200px;
     height: 200px;
     background-color: #ffffff;
@@ -31,39 +31,39 @@
     border-radius: 50%;
 }
 
-.ProfileInfo-h4 {
+.Summary-h4 {
     margin: 0;
 }
 
-.ProfileInfo-social-icons {
+.Summary-social-icons {
     display: inline-block;
     padding-top: 15px;
 }
 
-.ProfileInfo-social-icon {
+.Summary-social-icon {
     margin: 10px 5px;
     color: #ffffff;
 }
 
-.ProfileInfo-social-link:hover > .ProfileInfo-social-icon,
-.ProfileInfo-social-link:focus > .ProfileInfo-social-icon {
+.Summary-social-link:hover > .Summary-social-icon,
+.Summary-social-link:focus > .Summary-social-icon {
     color: #e4e4e4;
 }
 
-.ProfileInfo-linkedin-link > .ProfileInfo-social-icon {
+.Summary-linkedin-link > .Summary-social-icon {
     margin-left: 0;
 }
 
-.ProfileInfo-github-link > .ProfileInfo-social-icon {
+.Summary-github-link > .Summary-social-icon {
     margin-right: 0;
 }
 
-.ProfileInfo-resume-link {
+.Summary-resume-link {
     display: block;
     padding-top: 15px;
 }
 
-.ProfileInfo-resume-btn {
+.Summary-resume-btn {
     display: inline-block;
     width: 175px;
     padding: 6px 12px;
@@ -80,13 +80,13 @@
     color: #045e8e;
 }
 
-.ProfileInfo-resume-btn:hover,
-.ProfileInfo-resume-btn:focus {
+.Summary-resume-btn:hover,
+.Summary-resume-btn:focus {
     background-color: #e4e4e4;
 }
 
 @media (min-width: 768px) {
-    .ProfileInfo {
+    .Summary {
         width: 50%;
         position: fixed !important;
         height: 100%;
