@@ -1,8 +1,8 @@
 .Skills {
     color: #46494C;
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 @media (min-width: 768px) {
@@ -15,13 +15,13 @@
 }
 
 .Skills-inner {
-    padding: 30px 0;
+    padding: 32px 0;
 }
 
 .Skills-section {
     padding-bottom: 40px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .Skills-section-header {
@@ -29,14 +29,15 @@
     font-style: italic;
     font-weight: 600;
     font-size: 24px;
+    padding-bottom: 4px;
 }
 
 .Skills-section-info {
-    padding-bottom: 15px;
+    padding-bottom: 16px;
 }
 
 .Skills-section-description {
-    text-indent: 20px;
+    text-indent: 24px;
 }
 
 .Skills-section-highlight {
@@ -55,14 +56,14 @@
 
 .Skills-languages,
 .Skills-frameworks {
-    padding-top: 30px;
+    padding-top: 32px;
 }
 
 .Skills-languages-description,
 .Skills-frameworks-description {
     color: #045e8e;
     font-size: 18px;
-    padding-bottom: 20px;
+    padding-bottom: 16px;
 }
 
 .Skills-languages-list,

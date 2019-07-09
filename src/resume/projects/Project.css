@@ -1,22 +1,23 @@
 .Project {
-    padding-top: 15px;
+    padding-top: 16px;
 }
 
 .Project-header {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: #045e8e !important;
 }
 
 .Project-summary {
-    line-height: 1.15;
+    font-size: 14px;
+    line-height: 1.3;
     padding: 4px 0;
 }
 
 .Project-tech {
     display: table;
     font-style: italic;
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .Project-tech-label {

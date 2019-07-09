@@ -19,7 +19,8 @@
 }
 
 .CompanyWorkExperience-overview {
-    padding-top: 10px;
+    padding-top: 8px;
+    line-height: 1.3;
 }
 
 .CompanyWorkExperience-name {
@@ -40,7 +41,7 @@
         text-align: right;
         float: right;
     }
-    
+
     .CompanyWorkExperience-location-mobile {
         display: none;
     }

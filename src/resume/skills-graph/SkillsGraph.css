@@ -1,31 +1,32 @@
 .SkillsGraph-guide {
     display: table;
     width: 100%;
-    height: 15px;
+    height: 16px;
 }
 
 .SkillsGraph-guide-empty-column {
     display: table-cell;
     width: 185px;
     min-width: 185px;
-    height: 15px;
+    height: 16px;
 }
 
 .SkillsGraph-guide-bar {
     display: table-cell;
     width: 100%;
-    height: 15px;
+    height: 16px;
 }
 
 .SkillsGraph-guide-bar-quarter {
     display: inline-block;
+    vertical-align: bottom;
     width: 25%;
-    height: 15px;
+    height: 16px;
     border-right: 2px solid #46494C !important;
 }
 
 .SkillsGraph-body {
-    padding-top: 5px;
+    padding-top: 8px;
 }
 
 @media (min-width: 768px) {
