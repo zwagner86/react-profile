@@ -12,7 +12,6 @@
 .Resume-body {
     display: block;
     width: 100%;
-    padding: 24px;
 }
 
 .Resume-section {
@@ -20,19 +19,24 @@
 }
 
 .Resume-section-header {
+    background-color: #045e8e;
+    color: #ffffff;
+    text-align: center;
     font-weight: 600;
     font-size: 20px;
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .Resume-left-column {
     display: block;
     width: 100%;
+    padding: 24px 24px 0;
 }
 
 .Resume-right-column {
     display: block;
     width: 100%;
+    padding: 0 24px 24px;
 }
 
 .Resume-work-experience {
@@ -89,19 +93,17 @@
 
 @media print, (min-width: 992px) {
     .Resume-body {
-        display: table;
+        display: flex;
     }
 
     .Resume-left-column {
-        display: table-cell;
-        width: 50%;
-        padding-right: 16px;
+        width: 30%;
+        padding: 0 16px 0 0;
     }
 
     .Resume-right-column {
-        display: table-cell;
-        width: 50%;
-        padding-left: 16px;
+        width: 70%;
+        padding: 24px 24px 24px 16px;
     }
 }
 

@@ -3,7 +3,9 @@ import ReactGA from 'react-ga';
 import {Helmet} from "react-helmet";
 import {resume} from "personal-site-data";
 import Menu from '../common/menu/Menu';
+import ResumeContact from './ResumeContact';
 import ResumeHeader from './ResumeHeader';
+import ResumeTitle from './ResumeTitle';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
 import Projects from './projects/Projects';
 import SkillsGraph from './skills-graph/SkillsGraph';
@@ -41,9 +43,29 @@ export default class Resume extends Component {
                     <meta property="og:title" content={title} />
                 </Helmet>
                 <Menu />
-                <ResumeHeader />
                 <div className="Resume-body">
                     <div className="Resume-left-column">
+                        <ResumeTitle />
+                        <div>
+                            <div className="Resume-section Resume-about">
+                                <div className="Resume-section-header">About</div>
+                                <div>Software engineer with experience developing web applications using various technologies and platforms.  Proficient across all areas of software architecture.  Strong background in front-end development using multiple frameworks and libraries and experience with automated testing.</div>
+                            </div>
+                            <div className="Resume-section Resume-about">
+                                <div className="Resume-section-header">Contact</div>
+                                <ResumeContact />
+                            </div>
+                            <div className="Resume-section Resume-skills">
+                                <div className="Resume-section-header">Skills & Competencies</div>
+                                <SkillsGraph skills={skills} />
+                            </div>
+                            <div className="Resume-section Resume-interests">
+                                <div className="Resume-section-header">Interests</div>
+                                <div className="Resume-interests-list">{createInterestStringFromArray(interests)}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="Resume-right-column">
                         <div className="Resume-section Resume-experience">
                             <div className="Resume-section-header">Work Experience</div>
                             {workExperience.map((job, i) => {
@@ -68,16 +90,6 @@ export default class Resume extends Component {
                                     </Fragment>
                                 );
                             })}
-                        </div>
-                    </div>
-                    <div className="Resume-right-column">
-                        <div className="Resume-section Resume-skills">
-                            <div className="Resume-section-header">Skills & Competencies</div>
-                            <SkillsGraph skills={skills} />
-                        </div>
-                        <div className="Resume-section Resume-interests">
-                            <div className="Resume-section-header">Interests</div>
-                            <div className="Resume-interests-list">{createInterestStringFromArray(interests)}</div>
                         </div>
                         <div className="Resume-section Resume-education">
                             <div className="Resume-section-header">Education</div>
