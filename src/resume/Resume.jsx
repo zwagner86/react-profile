@@ -8,7 +8,7 @@ import ResumeHeader from './ResumeHeader';
 import ResumeTitle from './ResumeTitle';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
 import Projects from './projects/Projects';
-import SkillsGraph from './skills-graph/SkillsGraph';
+import SkillMeterList from './skill-meter/SkillMeterList';
 import './Resume.css';
 
 const createInterestStringFromArray = array => {
@@ -32,8 +32,45 @@ export default class Resume extends Component {
             education,
             interests,
             workExperience,
-            skills
         } = resume;
+        const skills = [
+            {
+                name: 'Development Techniques',
+                rating: 99
+            },
+            {
+                name: 'Code Quality',
+                rating: 98
+            },
+            {
+                name: 'Design Style',
+                rating: 96
+            },
+            {
+                name: 'Problem Solving',
+                rating: 100
+            },
+            {
+                name: 'Creativity',
+                rating: 100
+            },
+            {
+                name: 'Goal Oriented',
+                rating: 37
+            },
+            {
+                name: 'Leverages/Reuses Code',
+                rating: 96
+            },
+            {
+                name: 'Communication',
+                rating: 67
+            },
+            {
+                name: 'Sense of Fun',
+                rating: 100
+            }
+        ];
         const title = "Zachary Wagner - Software Engineer - Resume"
 
         return (
@@ -57,7 +94,7 @@ export default class Resume extends Component {
                             </div>
                             <div className="Resume-section Resume-skills">
                                 <div className="Resume-section-header">Skills & Competencies</div>
-                                <SkillsGraph skills={skills} />
+                                <SkillMeterList skills={skills} />
                             </div>
                             <div className="Resume-section Resume-interests">
                                 <div className="Resume-section-header">Interests</div>
@@ -93,11 +130,18 @@ export default class Resume extends Component {
                         </div>
                         <div className="Resume-section Resume-education">
                             <div className="Resume-section-header">Education</div>
-                            <div className="Resume-education-dates">{education.date}</div>
-                            <div className="Resume-education-degree">{education.degree}</div>
-                            <div className="Resume-education-school">{education.school}</div>
-                            <div className="Resume-education-major"><span>Major:</span>&nbsp;&nbsp;{education.major}</div>
-                            <div className="Resume-education-specialization"><span>Specialization:</span>&nbsp;&nbsp;{education.specialization}</div>
+                            <div className="Resume-education-school-info">
+                                <div className="Resume-education-dates-mobile">{education.date}</div>
+                                <div className="Resume-education-degree">{education.degree}</div>
+                                <div className="Resume-education-comma-separator">,&nbsp;</div>
+                                <div className="Resume-education-school">{education.school}</div>
+                                <div className="Resume-education-comma-separator">,&nbsp;</div>
+                                <div className="Resume-education-dates">{education.date}</div>
+                            </div>
+                            <div className="Resume-education-major-info">
+                                <div className="Resume-education-major"><span>Major:</span>&nbsp;&nbsp;{education.major}</div>
+                                <div className="Resume-education-specialization"><span>Specialization:</span>&nbsp;&nbsp;{education.specialization}</div>
+                            </div>
                         </div>
                     </div>
                 </div>

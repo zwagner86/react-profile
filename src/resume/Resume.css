@@ -52,19 +52,35 @@
     margin-top: -4px;
 }
 
-.Resume-education-dates {
+.Resume-education-dates-mobile {
+    display: block;
     color: #045e8e !important;
     font-size: 12px;
     font-weight: 600;
 }
 
+.Resume-education-dates {
+    display: none;
+}
+
 .Resume-education-degree {
     font-weight: 600;
+    display: block;
+}
+
+.Resume-education-school {
+    display: block;
+}
+
+.Resume-education-major-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .Resume-education-major,
 .Resume-education-specialization {
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .Resume-education-major > span,
@@ -75,6 +91,10 @@
 
 .Resume-education-school {
     font-size: 16px;
+}
+
+.Resume-education-comma-separator {
+    display: none;
 }
 
 .HorizontalRule {
@@ -103,7 +123,27 @@
 
     .Resume-right-column {
         width: 70%;
-        padding: 24px 24px 24px 16px;
+        padding: 0 0 0 16px;
+    }
+
+    .Resume-education-dates-mobile {
+        display: none;
+    }
+
+    .Resume-education-dates {
+        display: inline-block;
+    }
+
+    .Resume-education-degree {
+        display: inline-block;
+    }
+
+    .Resume-education-school {
+        display: inline-block;
+    }
+
+    .Resume-education-comma-separator {
+        display: inline-block;
     }
 }
 
