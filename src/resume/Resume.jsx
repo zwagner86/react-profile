@@ -9,6 +9,7 @@ import ResumeTitle from './ResumeTitle';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
 import Projects from './projects/Projects';
 import SkillMeterList from './skill-meter/SkillMeterList';
+import WordCloud from './word-cloud/WordCloud';
 import './Resume.css';
 
 const createInterestStringFromArray = array => {
@@ -20,6 +21,50 @@ const createInterestStringFromArray = array => {
 };
 
 export default class Resume extends Component {
+    constructor(props) {
+        super(props);
+
+        const {
+            workExperience
+        } = resume;
+
+        const techWordMap = workExperience.reduce((techWordsAcc, job) => {
+            const {
+                projects
+            } = job;
+
+            const projectTech = projects.reduce((projTechWordsAcc, proj) => {
+                projTechWordsAcc = projTechWordsAcc.concat(proj.tech);
+
+                return projTechWordsAcc;
+            }, []);
+
+            console.log(projectTech);
+
+            projectTech.forEach(tech => {
+                console.log(tech);
+                console.log(techWordsAcc[tech]);
+                if (techWordsAcc[tech] !== undefined) {
+                    console.log('add 1 to ', tech);
+                    techWordsAcc[tech] = techWordsAcc[tech] + 1;
+                } else {
+                    techWordsAcc[tech] = 1;
+                }
+            });
+
+            return techWordsAcc;
+        }, {});
+
+        this._techWordList = [];
+
+        for (let tech in techWordMap) {
+            this._techWordList.push({
+                text: tech,
+                value: techWordMap[tech]
+            })
+        }
+    }
+
     componentDidMount() {
         if (process.env.NODE_ENV === 'production') {
             ReactGA.set({page: window.location.pathname});
@@ -142,6 +187,10 @@ export default class Resume extends Component {
                                 <div className="Resume-education-major"><span>Major:</span>&nbsp;&nbsp;{education.major}</div>
                                 <div className="Resume-education-specialization"><span>Specialization:</span>&nbsp;&nbsp;{education.specialization}</div>
                             </div>
+                        </div>
+                        <div className="Resume-section Resume-word-cloud">
+                            <div className="Resume-section-header">Tech Word Cloud</div>
+                            <WordCloud words={this._techWordList} />
                         </div>
                     </div>
                 </div>
