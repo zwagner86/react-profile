@@ -1,0 +1,12 @@
+.InterestItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.InterestItem-icon {
+    margin: 0 0 8px;
+    color: #045e8e;
+}

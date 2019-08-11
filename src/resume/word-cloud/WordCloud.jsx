@@ -4,14 +4,14 @@ import ReactWordcloud from 'react-wordcloud';
 import './WordCloud.css';
 
 const options = {
-    colors: ['#045e8e', '#46494C'],
+    colors: ['#045e8e', '#46494C', '#FB6107'],
     enableTooltip: false,
     deterministic: false,
     fontFamily: 'Open Sans',
     fontSizes: [14, 56],
     fontStyle: 'normal',
     fontWeight: 'normal',
-    padding: 2,
+    padding: 3,
     rotations: 1,
     rotationAngles: [0, 90],
     scale: 'sqrt',

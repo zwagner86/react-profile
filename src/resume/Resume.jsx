@@ -4,67 +4,15 @@ import {Helmet} from "react-helmet";
 import {resume} from "personal-site-data";
 import Menu from '../common/menu/Menu';
 import ResumeContact from './ResumeContact';
-import ResumeHeader from './ResumeHeader';
 import ResumeTitle from './ResumeTitle';
 import CompanyWorkExperience from './work-experience/CompanyWorkExperience';
+import InterestsList from './interests/InterestsList';
 import Projects from './projects/Projects';
+import PersonalProject from './projects/PersonalProject';
 import SkillMeterList from './skill-meter/SkillMeterList';
-import WordCloud from './word-cloud/WordCloud';
 import './Resume.css';
 
-const createInterestStringFromArray = array => {
-    let interestString = '';
-    for ( let interestItem of array ) {
-        interestString += interestItem + '  |  ';
-    }
-    return interestString.slice(0, interestString.length - 5);
-};
-
 export default class Resume extends Component {
-    constructor(props) {
-        super(props);
-
-        const {
-            workExperience
-        } = resume;
-
-        const techWordMap = workExperience.reduce((techWordsAcc, job) => {
-            const {
-                projects
-            } = job;
-
-            const projectTech = projects.reduce((projTechWordsAcc, proj) => {
-                projTechWordsAcc = projTechWordsAcc.concat(proj.tech);
-
-                return projTechWordsAcc;
-            }, []);
-
-            console.log(projectTech);
-
-            projectTech.forEach(tech => {
-                console.log(tech);
-                console.log(techWordsAcc[tech]);
-                if (techWordsAcc[tech] !== undefined) {
-                    console.log('add 1 to ', tech);
-                    techWordsAcc[tech] = techWordsAcc[tech] + 1;
-                } else {
-                    techWordsAcc[tech] = 1;
-                }
-            });
-
-            return techWordsAcc;
-        }, {});
-
-        this._techWordList = [];
-
-        for (let tech in techWordMap) {
-            this._techWordList.push({
-                text: tech,
-                value: techWordMap[tech]
-            })
-        }
-    }
-
     componentDidMount() {
         if (process.env.NODE_ENV === 'production') {
             ReactGA.set({page: window.location.pathname});
@@ -77,45 +25,9 @@ export default class Resume extends Component {
             education,
             interests,
             workExperience,
+            skills,
+            personalProjects
         } = resume;
-        const skills = [
-            {
-                name: 'Development Techniques',
-                rating: 99
-            },
-            {
-                name: 'Code Quality',
-                rating: 98
-            },
-            {
-                name: 'Design Style',
-                rating: 96
-            },
-            {
-                name: 'Problem Solving',
-                rating: 100
-            },
-            {
-                name: 'Creativity',
-                rating: 100
-            },
-            {
-                name: 'Goal Oriented',
-                rating: 37
-            },
-            {
-                name: 'Leverages/Reuses Code',
-                rating: 96
-            },
-            {
-                name: 'Communication',
-                rating: 67
-            },
-            {
-                name: 'Sense of Fun',
-                rating: 100
-            }
-        ];
         const title = "Zachary Wagner - Software Engineer - Resume"
 
         return (
@@ -131,7 +43,7 @@ export default class Resume extends Component {
                         <div>
                             <div className="Resume-section Resume-about">
                                 <div className="Resume-section-header">About</div>
-                                <div>Software engineer with experience developing web applications using various technologies and platforms.  Proficient across all areas of software architecture.  Strong background in front-end development using multiple frameworks and libraries and experience with automated testing.</div>
+                                <div>Software engineer with over 6 years of experience developing web applications using various technologies and platforms.  Proficient across all areas of software architecture.  Strong background in front-end development using multiple frameworks and libraries.</div>
                             </div>
                             <div className="Resume-section Resume-about">
                                 <div className="Resume-section-header">Contact</div>
@@ -143,7 +55,7 @@ export default class Resume extends Component {
                             </div>
                             <div className="Resume-section Resume-interests">
                                 <div className="Resume-section-header">Interests</div>
-                                <div className="Resume-interests-list">{createInterestStringFromArray(interests)}</div>
+                                <InterestsList interests={interests} />
                             </div>
                         </div>
                     </div>
@@ -160,7 +72,7 @@ export default class Resume extends Component {
                                 } = job;
 
                                 return (
-                                    <Fragment key={i}>
+                                    <Fragment key={`${name}${i}`}>
                                         <CompanyWorkExperience
                                             name={name}
                                             location={location}
@@ -170,6 +82,21 @@ export default class Resume extends Component {
                                         <Projects projects={projects} />
                                         <div className="HorizontalRule" />
                                     </Fragment>
+                                );
+                            })}
+                        </div>
+                        <div className="Resume-section Resume-software-projects">
+                            <div className="Resume-section-header">Software Projects</div>
+                            {personalProjects.map((project, i) => {
+                                const {
+                                    name,
+                                } = project;
+
+                                return (
+                                    <PersonalProject
+                                        key={`${name}{i}`}
+                                        project={project}
+                                    />
                                 );
                             })}
                         </div>
@@ -187,10 +114,6 @@ export default class Resume extends Component {
                                 <div className="Resume-education-major"><span>Major:</span>&nbsp;&nbsp;{education.major}</div>
                                 <div className="Resume-education-specialization"><span>Specialization:</span>&nbsp;&nbsp;{education.specialization}</div>
                             </div>
-                        </div>
-                        <div className="Resume-section Resume-word-cloud">
-                            <div className="Resume-section-header">Tech Word Cloud</div>
-                            <WordCloud words={this._techWordList} />
                         </div>
                     </div>
                 </div>

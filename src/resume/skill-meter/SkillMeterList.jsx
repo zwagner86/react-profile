@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import SkillMeterItem from './SkillMeterItem';
 
 const convertRatingToNearestSkillHalf = rating => {
-    const skillValue = (rating / 100) * 5;
-
-    return Math.round(skillValue * 2) / 2;
+    return Math.round(rating * 2) / 2;
 };
 
 const SkillMeterList = ({

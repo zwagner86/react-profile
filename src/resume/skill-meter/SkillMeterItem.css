@@ -1,6 +1,11 @@
 .SkillMeterItem {
     display: flex;
-    height: 44px;
+    padding: 0 0 8px;
+}
+
+.SkillMeterItem:last-child {
+    display: flex;
+    padding: 0;
 }
 
 .SkillMeterItem-name {
