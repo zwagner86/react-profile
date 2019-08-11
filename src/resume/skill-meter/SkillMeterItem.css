@@ -1,0 +1,22 @@
+.SkillMeterItem {
+    display: flex;
+    padding: 0 0 8px;
+}
+
+.SkillMeterItem:last-child {
+    display: flex;
+    padding: 0;
+}
+
+.SkillMeterItem-name {
+    width: calc(100% - 100px);
+    padding: 0 8px 0 0;
+}
+
+.SkillMeterItem-rating {
+    width: 100px;
+}
+
+.SkillMeterItem-icon {
+    color: #045e8e;
+}
