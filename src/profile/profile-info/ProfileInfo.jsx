@@ -17,7 +17,7 @@ const ProfileInfo = () => (
                 <h1>Hey, I&apos;m Zach,</h1>
                 <h4 className="ProfileInfo-h4">a Front End Engineer</h4>
                 <h4 className="ProfileInfo-h4">working in Chicago</h4>
-                <h4 className="ProfileInfo-h4">for SpotHero</h4>
+                <h4 className="ProfileInfo-h4">for Rippleshot</h4>
                 <div className="ProfileInfo-social-icons">
                     <a
                         className="ProfileInfo-social-link ProfileInfo-linkedin-link"
