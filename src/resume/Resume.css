@@ -103,7 +103,7 @@
 
 .HorizontalRule {
     border-bottom: 1px solid #b1b1b1;
-    margin: 1.6em 32px 1.8em;
+    margin: 1.4em 32px 1.6em;
     height: 8px;
     display: block;
     position: relative;
@@ -156,5 +156,9 @@
         width: 1000px;
         padding: 0;
         font-size: 15px;
+    }
+
+    .HorizontalRule {
+        margin: 8px 32px 16px;
     }
 }

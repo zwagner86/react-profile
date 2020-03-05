@@ -37,3 +37,9 @@
     text-align: right;
     color: #045e8e !important;
 }
+
+@media print {
+    .Project {
+        padding-top: 12px;
+    }
+}

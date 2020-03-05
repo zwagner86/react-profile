@@ -6,3 +6,9 @@
     text-align: center;
     font-size: 13px;
 }
+
+@media print {
+    .Projects {
+        padding-top: 12px;
+    }
+}

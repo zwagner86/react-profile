@@ -43,7 +43,7 @@ export default class Resume extends Component {
                         <div>
                             <div className="Resume-section Resume-about">
                                 <div className="Resume-section-header">About</div>
-                                <div>Software engineer with over 6 years of experience developing web applications using various technologies and platforms.  Proficient across all areas of software architecture.  Strong background in front-end development using multiple frameworks and libraries.</div>
+                                <div>I am a Software Engineer with over 7 years of professional experience developing web applications using various technologies and platforms. In that time, I consulted for Fortune 500 companies and worked in mid-stage and early-stage startups. For the past 5 years, I focused on Front-End development - specializing in React.</div>
                             </div>
                             <div className="Resume-section Resume-about">
                                 <div className="Resume-section-header">Contact</div>
