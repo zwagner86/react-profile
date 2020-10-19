@@ -10,7 +10,7 @@
     "@fortawesome/react-fontawesome": "0.1.8",
     "personal-site-data": "zwagner86/personal-site-data#9d420b3",
     "prop-types": "15.7.2",
-    "react": "16.13.0",
+    "react": "16.14.0",
     "react-dom": "16.13.0",
     "react-ga": "2.7.0",
     "react-helmet": "5.2.1",
