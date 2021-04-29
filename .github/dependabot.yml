@@ -1,0 +1,26 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: http-proxy-middleware
+    versions:
+    - 1.0.6
+    - 1.1.0
+    - 1.1.1
+  - dependency-name: react-scripts
+    versions:
+    - 4.0.1
+    - 4.0.2
+  - dependency-name: "@fortawesome/free-brands-svg-icons"
+    versions:
+    - 5.15.2
+  - dependency-name: "@fortawesome/free-regular-svg-icons"
+    versions:
+    - 5.15.2
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
