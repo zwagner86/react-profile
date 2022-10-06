@@ -1,16 +1,16 @@
 import React, {Fragment} from 'react';
 import {
     BrowserRouter as Router,
-    Redirect,
+    Navigate,
     Route,
-    Switch
+    Routes
 } from 'react-router-dom';
 import SEOMeta from './common/meta/SEOMeta';
 import Profile from './profile/Profile';
 import Resume from './resume/Resume';
 
 const redirectToHome = () => {
-    return <Redirect to="/" />;
+    return <Navigate to="/" />;
 };
 
 const App = () => {
@@ -18,19 +18,19 @@ const App = () => {
         <Fragment>
             <SEOMeta />
             <Router>
-                <Switch>
+                <Routes>
                     <Route
                         path="/"
                         exact
-                        component={Profile}
+                        element={<Profile />}
                     />
                     <Route
                         path="/resume"
                         exact
-                        component={Resume}
+                        element={<Resume />}
                     />
                     <Route render={redirectToHome} />
-                </Switch>
+                </Routes>
             </Router>
         </Fragment>
     );
