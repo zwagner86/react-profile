@@ -1,4 +1,4 @@
-export default {
+const metaData = {
     siteTitle: "Zachary Wagner - Software Engineer",
     siteDescription: "I am a software engineer with lots of love for JavaScript and React",
     siteUrl: "https://www.zacharywagner.net",
@@ -7,4 +7,6 @@ export default {
     /* author */
     authorName: "Zachary Wagner",
     authorTwitterAccount: "byte_to_bits"
-}
+};
+
+export default metaData;
