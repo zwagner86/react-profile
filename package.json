@@ -6,7 +6,7 @@
     "@fortawesome/fontawesome-svg-core": "1.2.27",
     "@fortawesome/free-brands-svg-icons": "5.12.1",
     "@fortawesome/free-regular-svg-icons": "5.12.1",
-    "@fortawesome/free-solid-svg-icons": "5.12.1",
+    "@fortawesome/free-solid-svg-icons": "6.4.0",
     "@fortawesome/react-fontawesome": "0.1.8",
     "personal-site-data": "zwagner86/personal-site-data#9d420b3",
     "prop-types": "15.7.2",
